@@ -1,0 +1,21 @@
+{
+  "name": "Saboo RKS Arena App",
+  "short_name": "SabooMaruti",
+  "start_url": "https://saboomaruti.in/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "description": "Saboo Maruti Authorized Maruti Suzuki dealer in Hyderabad & Secunderabad",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
