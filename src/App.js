@@ -12,7 +12,7 @@ import WorkShop from './screens/outlets/WorkShop';
 import BookAService from './screens/more/BookAService';
 import DrivingSchoolOutlet from './screens/outlets/DrivingSchoolOutlet';
 import Covid from './screens/more/Covid';
-// import Blog from './screens/more/Blog';
+import Blog from './screens/more/Blog';
 import Awards from './screens/more/Awards';
 import Contact from './screens/more/Contact';
 import Accessories from './screens/more/Accessories';
@@ -87,7 +87,7 @@ import Careers from './screens/Careers/Careers';
 // import Popup2 from './components/Popup/Popup2';
 
 import Header2 from './components/header/Header2';
-import NewBlog from './screens/more/NewBlog';
+// import NewBlog from './screens/more/NewBlog';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -339,8 +339,8 @@ function App() {
           <Route path='/metaverse' element={<Metaverse />} />
           <Route path='/covid-19' element={<Covid />} />
           <Route path='/compare-cars' element={<Compare />} />
-          {/* <Route path='/blog' element={<Blog />} /> */}
-          <Route path='/blog' element={<NewBlog />} />
+          <Route path='/blog' element={<Blog />} />
+          {/* <Route path='/blog' element={<NewBlog />} /> */}
           <Route path='/awards' element={<Awards />} />
           <Route path='/awardstest' element={<AwardsTest />} />
           <Route path='/gallery' element={<Gallery />} />

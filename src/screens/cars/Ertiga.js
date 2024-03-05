@@ -83,14 +83,24 @@ function Ertiga() {
         alt='Buy Maruti Suzuki Ertiga 2023 in Hyderabad'
       />
       <CarsSlider scrollToCarEnquiry={scrollToCarEnquiry} />
-      <div className='mx-5'>
-        <Colors />
-        <PriceTable />
-        <Table />
-      </div>
-      {/* <ErtigaCarEnquiry /> */}
-      <div ref={carEnquiryRef}>
-        <CarEnquiryDown title='Ertiga' carName='Ertiga' />
+      <div className='container mx-auto'>
+        <div className='mx-5'>
+          {/* Car Enquiry and Colors */}
+          <div className='flex flex-col lg:flex-row lg:space-x-4'>
+            <div className='lg:w-1/2 mb-4 lg:mb-0' ref={carEnquiryRef}>
+              <CarEnquiryDown title='Ertiga' carName='Ertiga' />
+            </div>
+            <div className='lg:w-1/2'>
+              <Colors />
+            </div>
+          </div>
+
+          {/* Table and PriceTable */}
+          <div className='mt-8'>
+            <PriceTable />
+            <Table />
+          </div>
+        </div>
       </div>
       <div>
         {' '}
@@ -878,7 +888,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 const Colors = () => {
   const [current, setCurrent] = useState(1);
   return (
-    <div className='container mx-auto bg-gray-100 rounded py-8'>
+    <div className='container mx-auto bg-gray-100 rounded-3xl mt-16 py-8 flex flex-col items-center'>
       {ertigaColors.map((item) => (
         <img
           key={item.id}

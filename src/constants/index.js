@@ -550,7 +550,7 @@ export const tourProducts = [
     name: 'Alto',
     petrol: '22.05 km/l',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/logos/Tour_H1.webp',
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/Tour_H1.jpg',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/thumnails/cng-cars/tour-H1.png',
     brouchure:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Alto_Brand_Brochure.pdf',
     explore: '/maruti-alto-tour-h1-on-road-price-in-hyderabad',
@@ -562,7 +562,7 @@ export const tourProducts = [
     petrol: '19.95 km/l',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/logos/Tour_S.webp',
 
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/Tour_S.jpg',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/thumnails/cng-cars/Tour-S.png',
     brouchure:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Dzire_Brochure.pdf',
     explore: '/maruti-dzire-tour-s-on-road-price-in-hyderabad',
@@ -572,7 +572,7 @@ export const tourProducts = [
     name: 'Wagon R',
     petrol: '25.40 km/l',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/logos/Tour_H3.webp',
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/Tour_H3.jpg',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/thumnails/cng-cars/Tour-H3.png',
     brouchure:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_WagonR_Brochure.pdf',
     explore: '/maruti-wagnor-tour-h3-on-road-price-in-hyderabad',
@@ -582,7 +582,7 @@ export const tourProducts = [
     name: 'Ertiga',
     petrol: '18.04 km/l',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/logos/Tour_M.webp',
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/Tour_M.jpg',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/thumnails/cng-cars/Tour-M.png',
     brouchure:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Ertiga_Brochure.pdf',
     explore: '/maruti-ertiga-tour-m-on-road-price-in-hyderabad',
@@ -592,7 +592,7 @@ export const tourProducts = [
     name: 'Eeco',
     petrol: '16.11 km/l',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/logos/Tour_V.webp',
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/tour/Tour_V.jpg',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/thumnails/cng-cars/Tour-V.png',
     brouchure:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Eeco_Passenger_2022_brochure.pdf',
     explore: '/maruti-eeco-tour-v-on-road-price-in-hyderabad',

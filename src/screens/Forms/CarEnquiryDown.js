@@ -232,7 +232,7 @@ export const CarEnquiryDown = ({ title, carName }) => {
           )}
         </button>
         <div className='flex items-start py-1 '>
-          <div className='ml-2 text-sm'>
+          <div className='ml-2 text-xs'>
             <label
               htmlFor='disclaimer'
               className='font-medium text-gray-700 italic'
@@ -245,7 +245,7 @@ export const CarEnquiryDown = ({ title, carName }) => {
                 href='/maruti-car-terms-and-conditions'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='px-2  text-sm hover:font-bold hover:underline  text-blue-800 '
+                className='px-2  text-xs hover:font-bold hover:underline  text-blue-800 '
               >
                 Terms and Conditions
               </a>

@@ -160,14 +160,24 @@ function Brezza() {
         alt='Buy Maruti Suzuki Brezza 2023 in Hyderabad'
       />
       <CarsSlider scrollToCarEnquiry={scrollToCarEnquiry} />
-      <div className='mx-5'>
-        <Colors />
-        <PriceTable />
-        <Table />
-      </div>
-      {/* <BrezzaCarEnquiry /> */}
-      <div ref={carEnquiryRef}>
-        <CarEnquiryDown title='Brezza' carName='Brezza' />
+      <div className='container mx-auto'>
+        <div className='mx-5'>
+          {/* Car Enquiry and Colors */}
+          <div className='flex flex-col lg:flex-row lg:space-x-4'>
+            <div className='lg:w-1/2 mb-4 lg:mb-0' ref={carEnquiryRef}>
+              <CarEnquiryDown title='Brezza' carName='Brezza' />
+            </div>
+            <div className='lg:w-1/2'>
+              <Colors />
+            </div>
+          </div>
+
+          {/* Table and PriceTable */}
+          <div className='mt-8'>
+            <PriceTable />
+            <Table />
+          </div>
+        </div>
       </div>
       <div>
         <img
@@ -949,7 +959,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 const Colors = () => {
   const [current, setCurrent] = useState(1);
   return (
-    <div className='container mx-auto bg-gray-100 rounded py-8'>
+    <div className='container mx-auto bg-gray-100 rounded-3xl mt-16 py-8 flex flex-col items-center'>
       {brezzaColors.map((item) => (
         <img
           key={item.id}

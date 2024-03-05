@@ -438,8 +438,8 @@ function Accordian() {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? 'bg-[#1b72b7] text-gray-200 px-4 py-2 rounded shadow'
-                  : 'bg-gray-300 text-black hover:bg-[#124f80] hover:text-gray-300 mb-3 px-4 py-2 rounded shadow'
+                  ? 'bg-blue-800 text-gray-200 px-4 py-2 rounded-full shadow'
+                  : 'bg-gray-300 text-black hover:bg-blue-600 hover:text-gray-300 mb-3 px-4 py-2 rounded-full shadow'
               }
             >
               Features
@@ -448,8 +448,8 @@ function Accordian() {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? 'bg-[#1b72b7] text-gray-200 px-4 py-2 rounded shadow'
-                  : 'bg-gray-300 text-black hover:bg-[#124f80] hover:text-gray-300 mb-3 px-4 py-2 rounded shadow'
+                  ? 'bg-blue-800 text-gray-200 px-4 py-2 rounded-full shadow'
+                  : 'bg-gray-300 text-black hover:bg-blue-600 hover:text-gray-300 mb-3 px-4 py-2 rounded-full shadow'
               }
             >
               Specifications

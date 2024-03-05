@@ -179,8 +179,8 @@ const Blog = () => {
   return (
     <>
       <section class=''>
-        <div class='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-          <div class='mx-auto max-w-screen-sm text-center lg:mb-16 mb-8'>
+        <div class='py-8 px-4 mx-auto max-w-screen-xl lg:py-1 lg:px-2'>
+          <div class='mx-auto max-w-screen-sm text-center lg:mb-16 mb-2 '>
             <h2 class='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
               Our Blog
             </h2>
@@ -424,7 +424,7 @@ const Testimonials = () => {
     //     </div>
     //   </div>
     // </section>
-    <div className='container mx-auto my-5'>
+    <div className='container mx-auto my-5 lg:py-10 lg:px-8 py-20 '>
       <p className='text-center mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
         Testimonials
       </p>

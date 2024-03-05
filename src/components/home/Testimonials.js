@@ -3,7 +3,7 @@ import React from 'react';
 function Testimonials() {
   return (
     <>
-      <p className='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
+      <p className='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91] lg:py-8'>
         Testimonials
       </p>
       <p className='text-center'>What people have to say</p>

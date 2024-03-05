@@ -221,7 +221,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           />
         </div>
 
-        <div className='my-auto'>
+        <div className='my-auto '>
           <div className='flex flex-col items-center sm:flex-row sm:items-start'>
             <p className='text-3xl font-bold mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
               Maruti Alto 800
@@ -238,8 +238,8 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               ₹&nbsp;3.54 - 5.13 Lakh*
             </span>
           </p>
-          <div className='flex items-center flex-wrap mt-5 text-blue-800'>
-            <div className='flex items-center space-x-3 mr-7'>
+          <div className='flex items-center flex-wrap mt-5 text-blue-800 '>
+            <div className='flex items-center space-x-3 mr-7 '>
               <img
                 src={require('../../assets/icons/speedometer.png')}
                 className='h-8 w-8'
@@ -250,7 +250,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
                 <span className='font-semibold'>796cc</span>
               </p>
             </div>
-            <div className='flex items-center space-x-3 mx-3 mb-1'>
+            <div className='flex items-center space-x-3 mr-7 '>
               <img
                 src={require('../../assets/icons/gas-station.png')}
                 className='h-8 w-8'
@@ -261,7 +261,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
                 <span className='font-semibold'>22.05 kmpl*</span>
               </p>
             </div>
-            <div className='flex items-center space-x-3 mr-7 mb-1'>
+            <div className='flex items-center space-x-3 mr-7 '>
               <img
                 src={require('../../assets/icons/car.png')}
                 className='h-8 w-8'
@@ -273,42 +273,36 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               </p>
             </div>
           </div>
-          <div className='flex items-center space-x-2 mt-5 mb-1'>
-            <button
-              className='px-4 py-1.5 text-sm bg-blue-800 border hover:bg-red-500 text-white rounded-full shadow-sm'
-              onClick={scrollToCarEnquiry}
+          {/* <div className='flex items-center space-x-2 mt-5 mb-1'></div> */}
+          <div class='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 md:mt-5 md:mb-1 '>
+            <Link
+              to='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Alto_Brand_Brochure.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              class='flex-1 block px-4 py-2 text-sm bg-blue-800 text-white hover:bg-red-600 border border-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
-              Get Best Offers
-            </button>
+              View Brochure
+            </Link>
+            <Link
+              to='/compare-cars'
+              target='_blank'
+              rel='noopener noreferrer'
+              class='flex-1 block px-4 py-2 text-sm bg-white hover:bg-red-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
+            >
+              Compare
+            </Link>
             <Link
               to='/maruti-alto-800-cng-on-road-price-in-hyderabad'
-              className='block px-4 py-1.5 text-sm bg-white hover:bg-green-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white'
+              class='flex-1 block px-4 py-2 text-sm bg-white hover:bg-green-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
               Get CNG
             </Link>
           </div>
+
           <p className='h-px my-6 w-full bg-gray-300'></p>
-          <p className='mt-2 mb-5 text-sm'>
-            Our professional and well-trained staff is ready to assist you
+          <p className='mt-2 mb-5 text-xl text-blue-800'>
+            Our professional and well-trained staff is ready to assist you.
           </p>
-          <div className='flex items-center space-x-2 mt-5 mb-1'>
-            <a
-              href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Alto_Brand_Brochure.pdf'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='px-4 py-1.5 text-sm bg-blue-800 border hover:bg-red-500 text-white rounded-full shadow-sm uppercase'
-            >
-              View Brochure
-            </a>
-            <a
-              href='/compare-cars'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='px-4 py-1.5 text-sm border border-blue-800 text-blue-800 hover:bg-red-600 hover:border-red-600 hover:text-white duration-500 rounded-full shadow-sm'
-            >
-              Compare
-            </a>
-          </div>
         </div>
       </div>
     </>
