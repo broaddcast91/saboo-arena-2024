@@ -1,12 +1,12 @@
 const serviceCenterBanner = [
   {
     id: 1,
-    img: require('../assets/banners/Website Maruti Suzuki Service June Offers Saboo RKS Motor.webp'),
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Summer_Maruti_Suzuki_Service_Happy_Holi_Service_Saboo_RKS_Motor_March_Offers+2.webp',
   },
-  {
-    id: 2,
-    img: require('../assets/banners/Website_Valentines_Day_Maruti_Suzuki_Service_Saboo_RKS_Motor_February_Offers.webp'),
-  },
+  // {
+  //   id: 2,
+  //   img: require('../assets/banners/Website_Valentines_Day_Maruti_Suzuki_Service_Saboo_RKS_Motor_February_Offers.webp'),
+  // },
   {
     id: 3,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/arena-new-service-banner.webp',

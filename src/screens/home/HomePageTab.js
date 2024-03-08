@@ -194,7 +194,7 @@ const ArenaCars = () => {
           <a href='/maruti-suzuki-driving-school'>
             {' '}
             <img
-              src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/new-tile-banner.webp'
+              src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Arena_Website_Tile_Womens_Day_Saboo_RKS_Motor_March_Offers.webp'
               className='lg:mx-auto product_image lg:h-[400px] lg:w-full rounded-md shadow-2xl'
               alt='banner'
             />

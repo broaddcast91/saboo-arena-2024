@@ -12,9 +12,14 @@ export const sliders = [
   // },
 
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/saboo-driving-school-december-2023.webp',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Womens_Day_Saboo_RKS_Motor_March_Offers.webp',
     alt: 'Best Driving School in Hyderabad',
   },
+
+  // {
+  //   img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/saboo-driving-school-december-2023.webp',
+  //   alt: 'Best Driving School in Hyderabad',
+  // },
 
   // {
   //   img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Dhanteras_Saboo_RKS_Motor_November_Offers.webp',
@@ -90,10 +95,10 @@ export const mobileSliders = [
   //   img: require('../assets/banners/Maruti-Suzuki-Arena-New-Year-Mobile-banner-2024.webp'),
   //   alt: 'Buy New Maruti Suzuki Car in 2024 with great discount offers',
   // },
-  // {
-  //   img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Maruti_Suzuki_Navratri_+dussehra_Saboo_RKS_Motor_October_Offers_02.webp',
-  //   alt: 'Maruti Suzuki Navratri dussehra Saboo RKS Motor October Offers',
-  // },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Mobile_Womens_Day_Saboo_RKS_Motor_March_Offers.webp',
+    alt: 'Maruti Suzuki Navratri dussehra Saboo RKS Motor October Offers',
+  },
   // {
   //   img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Mobile_Gandhi_Jayanti_Saboo_RKS_Motor_October_Offers.webp',
   //   alt: 'Website Mobile Gandhi Jayanti Saboo RKS Motor October Offers',
@@ -191,6 +196,10 @@ export const offersSliders = [
   //   alt: 'sep-01 2023 bannner',
   // },
   {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Womens_Day_Saboo_RKS_Motor_March_Offers.webp',
+    alt: 'banner-1',
+  },
+  {
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/maruti-ertiga/SabooRKSMotor_Maruti_Suzuki_Arena_Next_Gen_Ertiga.webp',
     alt: 'banner-1',
   },
@@ -238,6 +247,10 @@ export const mobileOffersSliders = [
   //   img: require('../assets/banners/new/Mobile Banner/Website_Mobile_Year_End_Saboo_RKS_Motor_December_Offers.webp'),
   //   alt: 'Maruti Suzuki Year End  2023 Saboo RKS Motor December Offers',
   // },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Mobile_Womens_Day_Saboo_RKS_Motor_March_Offers.webp',
+    alt: 'banner-1',
+  },
   {
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/mobile_banner.webp',
     alt: 'banner-1',
