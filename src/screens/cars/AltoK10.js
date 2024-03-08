@@ -98,7 +98,7 @@ function AltoK10() {
 
           <div className='mt-8'>
             <PriceTable />
-            <Table />
+            {/* <Table /> */}
           </div>
         </div>
       </div>
@@ -657,32 +657,56 @@ const Colors = () => {
 
 const PriceTable = () => {
   return (
-    <div className='overflow-scroll md:overflow-hidden'>
-      <table className='table-auto border-collapse border border-slate-400 uppercase w-full container mx-auto my-8 text-left text-sm'>
+    <div className='overflow-scroll md:overflow-hidden rounded-2xl shadow-sm'>
+      <table className='min-w-max w-full table-auto bg-white border-collapse border rounded-lg shadow-md'>
         <thead className='bg-blue-800 text-white'>
           <tr>
-            <th className='border border-slate-300 font-semibold px-4 py-2'>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Variants
             </th>
-            <th className='border border-slate-300 font-semibold px-4 py-2'>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Transmission
             </th>
-            <th className='border border-slate-300 font-semibold px-4 py-2'>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Price
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-gray-700'>
           {altok10Mileage?.map((item) => (
-            <tr key={item.id}>
-              <td className='border border-slate-300 px-4 py-2'>
-                {item.title}
-              </td>
-              <td className='border border-slate-300 px-4 py-2'>
-                {item.transmission}
-              </td>
-              <td className='border border-slate-300 px-4 py-2'>
-                ₹&nbsp;{item.price} Lakh<sup>*</sup>
+            <tr
+              key={item.id}
+              className='border-b border-gray-200 hover:bg-gray-100'
+            >
+              <td className='py-3 px-4'>{item.title}</td>
+              <td className='py-3 px-4'>{item.transmission}</td>
+              <td className='py-3 px-4'>&nbsp;{item.price}</td>
+            </tr>
+          ))}
+        </tbody>
+        <thead className='bg-blue-800 text-white'>
+          <tr>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
+              Variants
+            </th>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
+              Transmission
+            </th>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
+              Mileage
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {altoK10Variants?.map((item) => (
+            <tr
+              key={item.id}
+              className='border-b border-gray-200 hover:bg-gray-100'
+            >
+              <td className='py-3 px-4'>{item.title}</td>
+              <td className='py-3 px-4'>{item.transmission}</td>
+              <td className='py-3 px-4'>
+                {item.mileage} <sup>*</sup>
               </td>
             </tr>
           ))}
@@ -697,27 +721,26 @@ const Table = () => {
       <table className='table-auto border-collapse border border-slate-400 uppercase w-full container mx-auto my-8 text-left text-sm'>
         <thead className='bg-blue-800 text-white'>
           <tr>
-            <th className='border border-slate-300 font-semibold px-4 py-2'>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Variants
             </th>
-            <th className='border border-slate-300 font-semibold px-4 py-2'>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Transmission
             </th>
-            <th className='border border-slate-300 font-semibold px-4 py-2'>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Mileage
             </th>
           </tr>
         </thead>
         <tbody>
           {altoK10Variants?.map((item) => (
-            <tr key={item.id}>
-              <td className='border border-slate-300 px-4 py-2'>
-                {item.title}
-              </td>
-              <td className='border border-slate-300 px-4 py-2'>
-                {item.transmission}
-              </td>
-              <td className='border border-slate-300 px-4 py-2'>
+            <tr
+              key={item.id}
+              className='border-b border-gray-200 hover:bg-gray-100'
+            >
+              <td className='py-3 px-4'>{item.title}</td>
+              <td className='py-3 px-4'>{item.transmission}</td>
+              <td className='py-3 px-4'>
                 {item.mileage} <sup>*</sup>
               </td>
             </tr>
