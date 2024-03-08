@@ -81,7 +81,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '24.35 ',
-    price: '5,54,500',
+    price: '₹ 5,54,500 Lakh',
   },
   {
     id: 2,
@@ -89,7 +89,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '24.35 ',
-    price: '5,99,500',
+    price: '₹ 5,99,500 Lakh',
   },
   {
     id: 3,
@@ -97,7 +97,7 @@ const wagonrVariants = [
     transmission: 'automatic',
     engine: '998 cc',
     mileage: '23.56 ',
-    price: '6,49,500',
+    price: '₹ 6,49,500 Lakh',
   },
   {
     id: 4,
@@ -105,7 +105,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '34.05 ',
-    price: '6,28,000',
+    price: '₹ 6,28,000 Lakh',
   },
   {
     id: 5,
@@ -113,7 +113,7 @@ const wagonrVariants = [
     transmission: 'automatic',
     engine: '998 cc',
     mileage: '25.19 ',
-    price: '6,78,000',
+    price: '₹ 6,78,000 Lakh',
   },
 
   {
@@ -122,7 +122,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '23.56 ',
-    price: '6,87,500',
+    price: '₹ 6,87,500 Lakh',
   },
   {
     id: 7,
@@ -130,7 +130,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '1197 cc',
     mileage: '23.56 ',
-    price: '6,75,500',
+    price: '₹ 6,75,500 Lakh',
   },
   {
     id: 8,
@@ -138,7 +138,7 @@ const wagonrVariants = [
     transmission: 'automatic',
     engine: '998 cc',
     mileage: '34.05 ',
-    price: '7,37,500',
+    price: '₹ 7,37,500 Lakh',
   },
   {
     id: 9,
@@ -146,7 +146,7 @@ const wagonrVariants = [
     transmission: 'automatic',
     engine: '998 cc',
     mileage: '24.43 ',
-    price: '7,25,500',
+    price: '₹ 7,25,500 Lakh',
   },
   {
     id: 10,
@@ -154,7 +154,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '1197 cc',
     mileage: '24.43 ',
-    price: '6,44,500',
+    price: '₹ 6,44,500 Lakh',
   },
   {
     id: 11,
@@ -162,7 +162,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '32.5 ',
-    price: '6,89,500',
+    price: '₹ 6,89,500 Lakh',
   },
   {
     id: 12,
@@ -170,7 +170,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '32.5 ',
-    price: '5,51,500',
+    price: '₹ 5,51,500 Lakh',
   },
   {
     id: 13,
@@ -178,7 +178,7 @@ const wagonrVariants = [
     transmission: 'manual',
     engine: '998 cc',
     mileage: '32.5 ',
-    price: '6,41,500',
+    price: '₹ 6,41,500 Lakh',
   },
   {
     id: 14,

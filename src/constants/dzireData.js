@@ -106,77 +106,77 @@ const dzireVariants = [
     title: 'lxi',
     transmission: 'manual',
 
-    price: '6,56,500',
+    price: '₹ 6,56,500  Lakh',
   },
   {
     id: 2,
     title: 'vxi ',
     transmission: 'manual',
 
-    price: '7,49,250',
+    price: '₹ 7,49,250 Lakh',
   },
   {
     id: 3,
     title: 'zxi ',
     transmission: 'manual',
 
-    price: '8,17,250',
+    price: '₹ 8,17,250 Lakh',
   },
   {
     id: 4,
     title: 'zxi+ ',
     transmission: 'manual',
 
-    price: '8,88,750',
+    price: '₹ 8,88,750 Lakh',
   },
   {
     id: 5,
     title: 'vxi ags ',
     transmission: 'automatic',
 
-    price: '7,99,250',
+    price: '₹ 7,99,250 Lakh',
   },
   {
     id: 6,
     title: 'zxi ags ',
     transmission: 'automatic',
 
-    price: '8,67,250',
+    price: '₹ 8,67,250 Lakh',
   },
   {
     id: 7,
     title: 'zxi+ ags',
     transmission: 'automatic',
 
-    price: '9,38,750',
+    price: '₹ 9,38,750 Lakh',
   },
   {
     id: 8,
     title: 'vxi CNG 1.2l',
     transmission: 'manual',
 
-    price: '8,44,250',
+    price: '₹ 8,44,250 Lakh',
   },
   {
     id: 9,
     title: 'zxi CNG 1.2l',
     transmission: 'manual',
 
-    price: '9,12,250',
+    price: '₹ 9,12,250 Lakh',
   },
   {
     id: 10,
     title: 'tour s std (o)',
     transmission: 'manual',
 
-    price: '6,51,000',
+    price: '₹ 6,51,000 Lakh',
   },
   {
     id: 11,
     title: 'tour s std (o) - cng',
     transmission: 'manual',
 
-    price: '7,46,000',
+    price: '₹ 7,46,000 Lakh',
   },
   {
     id: 12,

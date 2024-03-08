@@ -111,77 +111,77 @@ const swiftVariants = [
     title: 'lxi',
     transmission: 'manual',
 
-    price: '5,99,450',
+    price: '₹ 5,99,450 Lakh',
   },
   {
     id: 2,
     title: 'vxi',
     transmission: 'manual',
 
-    price: '6,95,000',
+    price: '₹ 6,95,000 Lakh',
   },
   {
     id: 3,
     title: 'vxi ags',
     transmission: 'automatic',
 
-    price: '7,50,000',
+    price: '₹ 7,50,000 Lakh',
   },
   {
     id: 4,
     title: 'zxi',
     transmission: 'manual',
 
-    price: '7,63,000',
+    price: '₹ 7,63,000 Lakh',
   },
   {
     id: 5,
     title: 'zxi ags',
     transmission: 'automatic',
 
-    price: '8,18,000',
+    price: '₹ 8,18,000 Lakh',
   },
   {
     id: 6,
     title: 'zxi+',
     transmission: 'manual',
 
-    price: '8,34,000',
+    price: '₹ 8,34,000 Lakh',
   },
   {
     id: 7,
     title: 'zxi+ (D)',
     transmission: 'manual',
 
-    price: '8,48,000',
+    price: '₹ 8,48,000 Lakh',
   },
   {
     id: 8,
     title: 'zxi+ ags',
     transmission: 'automatic',
 
-    price: '8,89,000',
+    price: '₹ 8,89,000 Lakh',
   },
   {
     id: 9,
     title: 'zxi+ ags (D)',
     transmission: 'automatic',
 
-    price: '9,03,000',
+    price: '₹ 9,03,000 Lakh',
   },
   {
     id: 10,
     title: 'vxi cng',
     transmission: 'manual',
 
-    price: '7,85,000',
+    price: '₹ 7,85,000 Lakh',
   },
   {
     id: 11,
     title: 'zxi cng',
     transmission: 'manual',
 
-    price: '8,53,000',
+    price: '₹ 8,53,000 Lakh',
   },
   {
     id: 12,
