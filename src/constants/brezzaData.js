@@ -243,6 +243,13 @@ const brezzaVariants = [
     mileage: '18.76',
     price: '12,09,500',
   },
+  {
+    id: 16,
+    title: '',
+    transmission: '',
+    mileage: '',
+    price: '',
+  },
 ];
 
 const brezzaMileage = [

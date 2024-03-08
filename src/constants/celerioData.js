@@ -133,6 +133,13 @@ const celerioVariants = [
     mileage: '34.43',
     price: '6,73,500',
   },
+  {
+    id: 8,
+    title: '',
+    transmission: '',
+    mileage: '',
+    price: '',
+  },
 ];
 
 const celerioMileage = [

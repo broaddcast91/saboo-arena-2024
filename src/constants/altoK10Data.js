@@ -144,6 +144,13 @@ const altok10Mileage = [
     mileage: '24.90 km/l',
     price: '5,85,000',
   },
+  {
+    id: 7,
+    title: '',
+    transmission: '',
+    mileage: '',
+    price: '',
+  },
 ];
 
 const altoK10Variants = [

@@ -161,6 +161,13 @@ const altoVariants = [
     mileage: '24.7',
     price: '4,20,000',
   },
+  {
+    id: 6,
+    title: '',
+    transmission: '',
+    mileage: '',
+    price: '',
+  },
 ];
 
 export { altoSliders, altoColors, altoVariants, altoMileage };

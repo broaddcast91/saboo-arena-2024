@@ -143,6 +143,13 @@ const eecoVariants = [
     mileage: '20.52',
     price: '8,32,000',
   },
+  {
+    id: 14,
+    title: '',
+    transmission: '',
+    mileage: '',
+    price: '',
+  },
 ];
 const eecoMileage = [
   {

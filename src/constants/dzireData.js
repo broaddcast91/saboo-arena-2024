@@ -178,6 +178,13 @@ const dzireVariants = [
 
     price: '7,46,000',
   },
+  {
+    id: 12,
+    title: '',
+    transmission: '',
+
+    price: '',
+  },
 ];
 
 const dzireMileage = [

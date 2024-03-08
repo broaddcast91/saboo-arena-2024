@@ -207,6 +207,13 @@ const ertigaVariants = [
     mileage: '26.08 ',
     price: '10,70,000',
   },
+  {
+    id: 17,
+    title: '',
+    transmission: '',
+    mileage: ' ',
+    price: '',
+  },
 ];
 
 const ertigaMileage = [

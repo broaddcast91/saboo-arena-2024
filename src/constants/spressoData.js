@@ -187,6 +187,13 @@ const spressoVariants = [
     mileage: '21.7',
     price: '6,00,500',
   },
+  {
+    id: 9,
+    title: '',
+    transmission: '',
+    mileage: '',
+    price: '',
+  },
 ];
 
 const spressoMileage = [

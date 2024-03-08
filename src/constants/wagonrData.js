@@ -180,6 +180,14 @@ const wagonrVariants = [
     mileage: '32.5 ',
     price: '6,41,500',
   },
+  {
+    id: 14,
+    title: '',
+    transmission: '',
+    engine: '',
+    mileage: '',
+    price: '',
+  },
 ];
 
 const wagonrMileage = [

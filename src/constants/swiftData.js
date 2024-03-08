@@ -183,6 +183,13 @@ const swiftVariants = [
 
     price: '8,53,000',
   },
+  {
+    id: 12,
+    title: '',
+    transmission: '',
+
+    price: '',
+  },
 ];
 
 const swiftMileage = [
