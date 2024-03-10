@@ -128,6 +128,10 @@ const spressoColors = [
     id: 5,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/spresso/colors/Maruti-Suzuki-Spresso-Silver.webp',
   },
+  {
+    id: 6,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/spresso/S-Presso-black.webp',
+  },
 ];
 
 const spressoVariants = [

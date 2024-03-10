@@ -933,11 +933,11 @@ const Colors = () => {
         ></p>
         <p
           className={
-            current === 5
-              ? 'h-5 rounded-full w-5 bg-[#f1f3f5] animate-bounce'
-              : 'h-5 rounded-full w-5 bg-[#f1f3f5]'
+            current === 6
+              ? 'h-5 rounded-full w-5 bg-[#040404] animate-bounce'
+              : 'h-5 rounded-full w-5 bg-[#040404]'
           }
-          onClick={(e) => setCurrent(5)}
+          onClick={(e) => setCurrent(6)}
         ></p>
       </div>
     </div>

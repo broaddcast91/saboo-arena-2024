@@ -92,6 +92,10 @@ const altoK10Colors = [
     id: 6,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/new-alto-k10/colors/color_range_688x360_gold.webp',
   },
+  {
+    id: 7,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/alto-k10/altok10-black.webp',
+  },
 ];
 
 const altok10Mileage = [

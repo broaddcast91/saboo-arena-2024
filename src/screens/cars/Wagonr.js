@@ -946,6 +946,12 @@ const Colors = () => {
           } h-5 rounded-full w-5 border border-gray-300 bg-[#FFF]`}
           onClick={() => setCurrent(8)}
         ></p>
+        <p
+          className={`${
+            current === 9 ? 'animate-bounce' : ''
+          } h-5 rounded-full w-5 border border-black bg-[#080808]`}
+          onClick={() => setCurrent(9)}
+        ></p>
       </div>
     </div>
   );

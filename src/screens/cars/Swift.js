@@ -966,6 +966,14 @@ const Colors = () => {
           }}
           onClick={(e) => setCurrent(9)}
         ></p>
+        <p
+          className={
+            current === 10
+              ? 'h-5 rounded-full w-5 bg-[#090909] animate-bounce'
+              : 'h-5 rounded-full w-5 bg-[#090909]'
+          }
+          onClick={(e) => setCurrent(10)}
+        ></p>
       </div>
     </div>
   );

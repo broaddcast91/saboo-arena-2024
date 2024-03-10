@@ -72,6 +72,10 @@ const wagonrColors = [
     id: 8,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/wagonr/colors/SOLID-WHITE.webp',
   },
+  {
+    id: 9,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/wagon-r/wagonr-black.webp',
+  },
 ];
 
 const wagonrVariants = [

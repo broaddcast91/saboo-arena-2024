@@ -24,23 +24,24 @@ const eecoSliders = [
 const eecoColors = [
   {
     id: 1,
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/colors/Maruti-Suzuki-Ecco-Superior-White.webp',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/eeco/eeco-white.webp',
   },
   {
     id: 2,
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/colors/Maruti-Suzuki-Eeco-Breeze-Blue.webp',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/eeco/Eeco+color+shot_blue.webp',
   },
+
   {
     id: 3,
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/colors/Maruti-Suzuki-Eeco-Mettalic-Grey.webp',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/eeco/Eeco+color+shot_Glistening+Grey.webp',
   },
   {
     id: 4,
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/colors/Maruti-Suzuki-Eeco-Midnight-Black.webp',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/eeco/Eeco+color+shot_Silky+Silver.webp',
   },
   {
     id: 5,
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/colors/Maruti-Suzuki-Eeco-Silky-Silver.webp',
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/eeco/eec0-black.webp',
   },
 ];
 

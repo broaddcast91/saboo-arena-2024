@@ -84,7 +84,7 @@ function Eeco() {
       <div className='container mx-auto'>
         <div className='mx-5'>
           {/* Car Enquiry and Colors */}
-          <div className='flex flex-col lg:flex-row lg:space-x-4'>
+          <div className='flex flex-col lg:flex-row lg:space-x-4 rounded-3xl'>
             <div className='lg:w-1/2 mb-4 lg:mb-0' ref={carEnquiryRef}>
               <CarEnquiryDown title='Eeco' carName='Eeco' />
             </div>
@@ -865,56 +865,59 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 const Colors = () => {
   const [current, setCurrent] = useState(1);
   return (
-    <div className='container mx-auto bg-gray-100 rounded-3xl mt-16 py-8 flex flex-col items-center'>
-      {eecoColors.map((item) => (
-        <img
-          key={item.id}
-          src={item.img}
-          className={item.id === current ? 'mx-auto md:h-80' : 'hidden'}
-          alt={item.id}
-        />
-      ))}
-      <div className='flex items-center justify-center space-x-3 sm:space-y-0 space-y-1'>
-        <p
-          className={
-            current === 1
-              ? 'h-5 rounded-full w-5 bg-[#EFF0F2] animate-bounce'
-              : 'h-5 rounded-full w-5 bg-[#EFF0F2]'
-          }
-          onClick={(e) => setCurrent(1)}
-        ></p>
-        <p
-          className={
-            current === 2
-              ? 'h-5 rounded-full w-5 bg-[#1F2FDC] animate-bounce'
-              : 'h-5 rounded-full w-5 bg-[#1F2FDC]'
-          }
-          onClick={(e) => setCurrent(2)}
-        ></p>
-        <p
-          className={
-            current === 3
-              ? 'h-5 rounded-full w-5 bg-[#666666] animate-bounce'
-              : 'h-5 rounded-full w-5 bg-[#666666]'
-          }
-          onClick={(e) => setCurrent(3)}
-        ></p>
-        <p
-          className={
-            current === 4
-              ? 'h-5 rounded-full w-5 bg-[#262B2E] animate-bounce'
-              : 'h-5 rounded-full w-5 bg-[#262B2E]'
-          }
-          onClick={(e) => setCurrent(4)}
-        ></p>
-        <p
-          className={
-            current === 5
-              ? 'h-5 rounded-full w-5 bg-[#D2CFD0] animate-bounce'
-              : 'h-5 rounded-full w-5 bg-[#D2CFD0]'
-          }
-          onClick={(e) => setCurrent(5)}
-        ></p>
+    <div className='border rounded-3xl mt-8 bg-gray-100'>
+      <div className='container mx-auto mt-12 py-12 flex flex-col items-center'>
+        {eecoColors.map((item) => (
+          <img
+            key={item.id}
+            src={item.img}
+            className={item.id === current ? 'mx-auto md:h-80' : 'hidden'}
+            alt={item.id}
+          />
+        ))}
+        <div className='flex items-center justify-center space-x-3 sm:space-y-0 space-y-1'>
+          <p
+            className={
+              current === 1
+                ? 'h-5 rounded-full w-5 bg-[#fcfcfc] animate-bounce'
+                : 'h-5 rounded-full w-5 bg-[#fcfcfc]'
+            }
+            onClick={(e) => setCurrent(1)}
+          ></p>
+          <p
+            className={
+              current === 2
+                ? 'h-5 rounded-full w-5 bg-[#0084C9] animate-bounce'
+                : 'h-5 rounded-full w-5 bg-[#0084C9]'
+            }
+            onClick={(e) => setCurrent(2)}
+          ></p>
+
+          <p
+            className={
+              current === 3
+                ? 'h-5 rounded-full w-5 bg-[#525255] animate-bounce'
+                : 'h-5 rounded-full w-5 bg-[#525255]'
+            }
+            onClick={(e) => setCurrent(3)}
+          ></p>
+          <p
+            className={
+              current === 4
+                ? 'h-5 rounded-full w-5 bg-[#D2CFD0] animate-bounce'
+                : 'h-5 rounded-full w-5 bg-[#D2CFD0]'
+            }
+            onClick={(e) => setCurrent(4)}
+          ></p>
+          <p
+            className={
+              current === 5
+                ? 'h-5 rounded-full w-5 bg-[#080808] animate-bounce'
+                : 'h-5 rounded-full w-5 bg-[#080808]'
+            }
+            onClick={(e) => setCurrent(5)}
+          ></p>
+        </div>
       </div>
     </div>
   );

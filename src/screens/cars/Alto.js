@@ -81,7 +81,7 @@ export function Alto() {
       <div className='container mx-auto'>
         <div className='mx-5'>
           {/* Car Enquiry and Colors */}
-          <div className='flex flex-col lg:flex-row lg:space-x-4'>
+          <div className='flex flex-col lg:flex-row lg:space-x-4 rounded-3xl'>
             <div className='lg:w-1/2 mb-4 lg:mb-0' ref={carEnquiryRef}>
               <CarEnquiryDown title='Alto 800' carName='Alto 800' />
             </div>
@@ -312,40 +312,42 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 const Colors = () => {
   const [current, setCurrent] = useState(1);
   return (
-    <div className='container mx-auto bg-gray-100 rounded-3xl mt-16 py-8 flex flex-col items-center'>
-      {altoColors.map((item) => (
-        <img
-          key={item.id}
-          src={item.img}
-          className={item.id === current ? 'mb-4 sm:h-80' : 'hidden'}
-          alt={item.id}
-        />
-      ))}
-      <div className='flex items-center justify-center space-x-3 sm:space-y-0 space-y-1'>
-        <button
-          className={`${
-            current === 1 ? 'animate-bounce' : ''
-          } h-5 w-5 bg-[#c72e40] rounded-full focus:outline-none`}
-          onClick={(e) => setCurrent(1)}
-        ></button>
-        <button
-          className={`${
-            current === 2 ? 'animate-bounce' : ''
-          } h-5 w-5 bg-[#676767] rounded-full focus:outline-none`}
-          onClick={(e) => setCurrent(2)}
-        ></button>
-        <button
-          className={`${
-            current === 3 ? 'animate-bounce' : ''
-          } h-5 w-5 bg-[#acacac] rounded-full focus:outline-none`}
-          onClick={(e) => setCurrent(3)}
-        ></button>
-        <button
-          className={`${
-            current === 4 ? 'animate-bounce' : ''
-          } h-5 w-5 bg-[#ffffff] rounded-full focus:outline-none`}
-          onClick={() => setCurrent(4)}
-        ></button>
+    <div className='border rounded-3xl mt-8 bg-gray-100'>
+      <div className='container mx-auto mt-12 py-12 flex flex-col items-center'>
+        {altoColors.map((item) => (
+          <img
+            key={item.id}
+            src={item.img}
+            className={item.id === current ? 'mb-4 sm:h-80' : 'hidden'}
+            alt={item.id}
+          />
+        ))}
+        <div className='flex items-center justify-center space-x-3 sm:space-y-0 space-y-1'>
+          <button
+            className={`${
+              current === 1 ? 'animate-bounce' : ''
+            } h-5 w-5 bg-[#c72e40] rounded-full focus:outline-none`}
+            onClick={(e) => setCurrent(1)}
+          ></button>
+          <button
+            className={`${
+              current === 2 ? 'animate-bounce' : ''
+            } h-5 w-5 bg-[#676767] rounded-full focus:outline-none`}
+            onClick={(e) => setCurrent(2)}
+          ></button>
+          <button
+            className={`${
+              current === 3 ? 'animate-bounce' : ''
+            } h-5 w-5 bg-[#acacac] rounded-full focus:outline-none`}
+            onClick={(e) => setCurrent(3)}
+          ></button>
+          <button
+            className={`${
+              current === 4 ? 'animate-bounce' : ''
+            } h-5 w-5 bg-[#ffffff] rounded-full focus:outline-none`}
+            onClick={() => setCurrent(4)}
+          ></button>
+        </div>
       </div>
     </div>
   );

@@ -87,7 +87,7 @@ function AltoK10() {
 
       <div className='container mx-auto'>
         <div className='mx-5'>
-          <div className='flex flex-col lg:flex-row lg:space-x-4'>
+          <div className='flex flex-col lg:flex-row lg:space-x-4 rounded-3xl'>
             <div className='lg:w-1/2 mb-4 lg:mb-0' ref={carEnquiryRef}>
               <CarEnquiryDown title='Alto K10' carName='Alto K10' />
             </div>
@@ -603,53 +603,62 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 const Colors = () => {
   const [current, setCurrent] = useState(1);
   return (
-    <div className='container mx-auto bg-gray-100 rounded-3xl mt-16 py-8 flex flex-col items-center'>
-      {altoK10Colors.map((item) => (
-        <img
-          key={item.id}
-          src={item.img}
-          className={item.id === current ? 'mx-auto sm:h-80' : 'hidden'}
-          alt={item.id}
-        />
-      ))}
-      <div className='flex items-center justify-center space-x-3 sm:space-y-0 space-y-1'>
-        <p
-          className={`${
-            current === 1 ? 'animate-bounce' : ''
-          } h-5 rounded-full w-5 bg-[#BF001B]`}
-          onClick={(e) => setCurrent(1)}
-        ></p>
-        <p
-          className={`${
-            current === 2 ? 'animate-bounce' : ''
-          } h-5 rounded-full w-5 bg-[#1F2FDC]`}
-          onClick={(e) => setCurrent(2)}
-        ></p>
-        <p
-          className={`${
-            current === 3 ? 'animate-bounce' : ''
-          } h-5 rounded-full w-5 bg-[#3e403f]`}
-          onClick={(e) => setCurrent(3)}
-        ></p>
+    <div className='border rounded-3xl mt-8 bg-gray-100'>
+      {' '}
+      <div className='container mx-auto mt-12 py-12 flex flex-col items-center'>
+        {altoK10Colors.map((item) => (
+          <img
+            key={item.id}
+            src={item.img}
+            className={item.id === current ? 'mx-auto sm:h-80' : 'hidden'}
+            alt={item.id}
+          />
+        ))}
+        <div className='flex items-center justify-center space-x-3 sm:space-y-0 space-y-1'>
+          <p
+            className={`${
+              current === 1 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#BF001B]`}
+            onClick={(e) => setCurrent(1)}
+          ></p>
+          <p
+            className={`${
+              current === 2 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#1F2FDC]`}
+            onClick={(e) => setCurrent(2)}
+          ></p>
+          <p
+            className={`${
+              current === 3 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#3e403f]`}
+            onClick={(e) => setCurrent(3)}
+          ></p>
 
-        <p
-          className={`${
-            current === 4 ? 'animate-bounce' : ''
-          } h-5 rounded-full w-5 bg-[#b3b5b0]`}
-          onClick={() => setCurrent(4)}
-        ></p>
-        <p
-          className={`${
-            current === 5 ? 'animate-bounce' : ''
-          } h-5 rounded-full w-5 bg-[#dce0e1]`}
-          onClick={() => setCurrent(5)}
-        ></p>
-        <p
-          className={`${
-            current === 6 ? 'animate-bounce' : ''
-          } h-5 rounded-full w-5 bg-[#dd9c6b]`}
-          onClick={() => setCurrent(6)}
-        ></p>
+          <p
+            className={`${
+              current === 4 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#b3b5b0]`}
+            onClick={() => setCurrent(4)}
+          ></p>
+          <p
+            className={`${
+              current === 5 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#dce0e1]`}
+            onClick={() => setCurrent(5)}
+          ></p>
+          <p
+            className={`${
+              current === 6 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#dd9c6b]`}
+            onClick={() => setCurrent(6)}
+          ></p>
+          <p
+            className={`${
+              current === 7 ? 'animate-bounce' : ''
+            } h-5 rounded-full w-5 bg-[#0F1112]`}
+            onClick={() => setCurrent(7)}
+          ></p>
+        </div>
       </div>
     </div>
   );

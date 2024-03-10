@@ -98,6 +98,10 @@ const dzireColors = [
     id: 6,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/maruti-dzire/DzireWhitemerged-v4.webp',
   },
+  {
+    id: 7,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/dzire/dzire-black.webp',
+  },
 ];
 
 const dzireVariants = [

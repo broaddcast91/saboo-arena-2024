@@ -74,6 +74,10 @@ const celerioColors = [
     id: 5,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/celerio/colors/Maruti-Suzuki-Clerio-Fire-Red.webp',
   },
+  {
+    id: 6,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/celerio/celerio-black.webp',
+  },
 ];
 
 const celerioVariants = [

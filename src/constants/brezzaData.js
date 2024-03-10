@@ -134,6 +134,10 @@ const brezzaColors = [
     id: 9,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/brezza/colors/splendid_silver.webp',
   },
+  {
+    id: 10,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/brezza/brezza-black.webp',
+  },
 ];
 
 const brezzaVariants = [

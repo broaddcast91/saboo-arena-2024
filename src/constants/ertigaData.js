@@ -91,6 +91,10 @@ const ertigaColors = [
     id: 6,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/maruti-ertiga/colors/dignity_brown.webp',
   },
+  {
+    id: 7,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/ertiga/ertiga-black.webp',
+  },
 ];
 
 const ertigaVariants = [

@@ -103,6 +103,10 @@ const swiftColors = [
     id: 9,
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/swift/colors/Maruti-Suzuki-Swift-fire-red-midnight-black.webp',
   },
+  {
+    id: 10,
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/swift/Swift-black.png',
+  },
 ];
 
 const swiftVariants = [
