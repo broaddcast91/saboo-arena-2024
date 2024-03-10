@@ -223,8 +223,8 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 
         <div className='my-auto '>
           <div className='flex flex-col items-center sm:flex-row sm:items-start'>
-            <p className='text-3xl font-bold mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
-              Maruti Alto 800
+            <p className='text-3xl font-light mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
+              Maruti Suzuki <span className='font-semibold'>Alto</span>
             </p>
             <img
               className='w-14 h-7 mr-2 shadow-2xl'
@@ -275,14 +275,14 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           </div>
           {/* <div className='flex items-center space-x-2 mt-5 mb-1'></div> */}
           <div class='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 md:mt-5 md:mb-1 '>
-            <Link
-              to='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Alto_Brand_Brochure.pdf'
+            <a
+              href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_Alto_Brand_Brochure.pdf'
               target='_blank'
               rel='noopener noreferrer'
               class='flex-1 block px-4 py-2 text-sm bg-blue-800 text-white hover:bg-red-600 border border-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
               View Brochure
-            </Link>
+            </a>
             <Link
               to='/compare-cars'
               target='_blank'

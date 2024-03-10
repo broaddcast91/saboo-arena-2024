@@ -600,11 +600,11 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 
       <div className='my-auto'>
         <div className='flex flex-col items-center sm:flex-row sm:items-start'>
-          <p className='text-3xl font-semibold mb-2 sm:mb-0 sm:mr-4'>
-            Maruti Suzuki Brezza
+          <p className='text-3xl font-light mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
+            Maruti Suzuki <span className='font-semibold'>Brezza</span>
           </p>
           <img
-            className='w-12 h-7  mr-2'
+            className='w-14 h-7  mr-2 shadow-xl'
             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/icons/AGS.webp'
             alt=''
           />
@@ -620,11 +620,13 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           />
         </div>
 
-        <p className='font-semibold'>
+        <p className='font-light text-lg text-blue-800'>
           Ex-Showroom Price:
-          <span className='text-red-600 ml-3'>₹&nbsp;8.34 - 14.14 Lakh*</span>
+          <span className='text-red-600 ml-3 text-xl'>
+            ₹&nbsp;8.34 - 14.14 Lakh*
+          </span>
         </p>
-        <div className='flex items-center flex-wrap mt-5'>
+        <div className='flex items-center flex-wrap mt-5 text-blue-800'>
           <div className='flex items-center space-x-3 mr-7'>
             <img
               src={require('../../assets/icons/speedometer.png')}
@@ -633,7 +635,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
             />
             <p className='text-sm'>
               Engine <br />
-              <span>1462 CC</span>
+              <span className='font-semibold'>1462 CC</span>
             </p>
           </div>
 
@@ -646,7 +648,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
             <p className='text-sm'>
               Mileage (KM/L)
               <br />
-              <span>
+              <span className='font-semibold'>
                 19.80<sup>*</sup>
               </span>
             </p>
@@ -660,20 +662,36 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
             />
             <p className='text-sm'>
               Power (kW) <br />
-              <span>75.8</span>
+              <span className='font-semibold'>75.8</span>
             </p>
           </div>
         </div>
-        <div className='flex items-center space-x-2 mt-5 mb-1'>
-          <button
+        <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 md:mt-5 md:mb-1 '>
+          {/* <button
             className='px-4 py-1.5 text-sm border border-red-600 text-red-600 hover:bg-red-600 hover:text-white duration-500 rounded shadow-sm'
             onClick={scrollToCarEnquiry}
           >
             Get Best Offers
-          </button>
+          </button> */}
+          <a
+            href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Brezza2022_Hot_Techy_SUV_Broucher.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='flex-1 block px-4 py-2 text-sm bg-blue-800 text-white hover:bg-red-600 border border-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
+          >
+            View Brochure
+          </a>
+          <Link
+            to='/compare-cars'
+            target='_blank'
+            rel='noopener noreferrer'
+            class='flex-1 block px-4 py-2 text-sm bg-white hover:bg-red-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
+          >
+            Compare
+          </Link>
           <Link
             to='/maruti-brezza-cng-on-road-price'
-            className='block px-4 py-1.5 text-sm bg-white hover:bg-green-600 border border-black text-black rounded shadow-sm hover:border-none hover:text-white'
+            className='flex-1 block px-4 py-2 text-sm bg-white hover:bg-green-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
           >
             Get CNG
           </Link>
@@ -683,274 +701,9 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           <BsCalendarCheck className="mr-1" />
           Delivery from Saboo RKS, 7-30 days
         </p> */}
-        <p className='mt-2 mb-5 font-semibold'>
+        <p className='mt-2 mb-5 text-xl text-blue-800'>
           Our professional and well-trained staff is ready to assist you
         </p>
-        <div className='flex items-center space-x-2 mt-5 mb-1'>
-          <a
-            href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Brezza2022_Hot_Techy_SUV_Broucher.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='px-4 py-1.5 text-sm bg-red-600 border hover:bg-red-500 text-white rounded shadow-sm uppercase'
-          >
-            View Brochure
-          </a>
-          <a
-            href='/compare-cars'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='px-4 py-1.5 text-sm border border-red-600 text-red-600 hover:bg-red-600 hover:text-white duration-500 rounded shadow-sm'
-          >
-            Compare
-          </a>
-        </div>
-
-        <Transition.Root show={open} as={Fragment}>
-          <Dialog
-            as='div'
-            className='relative z-10'
-            initialFocus={cancelButtonRef}
-            onClose={setOpen}
-          >
-            <Transition.Child
-              as={Fragment}
-              enter='ease-out duration-300'
-              enterFrom='opacity-0'
-              enterTo='opacity-100'
-              leave='ease-in duration-200'
-              leaveFrom='opacity-100'
-              leaveTo='opacity-0'
-            >
-              <div className='fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity' />
-            </Transition.Child>
-
-            <div className='fixed z-10 inset-0 overflow-y-auto'>
-              <div className='flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0'>
-                <Transition.Child
-                  as={Fragment}
-                  enter='ease-out duration-300'
-                  enterFrom='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
-                  enterTo='opacity-100 translate-y-0 sm:scale-100'
-                  leave='ease-in duration-200'
-                  leaveFrom='opacity-100 translate-y-0 sm:scale-100'
-                  leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
-                >
-                  <form
-                    id='brezzaPopup'
-                    action={
-                      pattern.test(phone) && phone.length === 10
-                        ? 'https://crm.zoho.in/crm/WebToLeadForm'
-                        : '#'
-                    }
-                    name='WebToLeads54158000083979838'
-                    method={'POST'}
-                    acceptCharset='UTF-8'
-                  >
-                    <input
-                      type='text'
-                      style={{ display: 'none' }}
-                      name='xnQsjsdp'
-                      value='c74cc4baa2079f2637d12188693a8bb7a822a54f015337983612fcbc54e9f529'
-                    />
-                    <input type='hidden' name='zc_gad' id='zc_gad' value='' />
-                    <input
-                      type='text'
-                      style={{ display: 'none' }}
-                      name='xmIwtLD'
-                      value='adcef2507910e0e3ba3fffde446eb242f3dba817a00c872b6a7d471bc1ce61d0bd840c68a483b37a9012f6016a3ceeb4'
-                    />
-                    <input
-                      type='text'
-                      style={{ display: 'none' }}
-                      name='actionType'
-                      value='TGVhZHM='
-                    />
-                    <input
-                      type='text'
-                      style={{ display: 'none' }}
-                      name='returnURL'
-                      value='https://www.saboomaruti.in/thank-you-for-contact-us'
-                    />
-                    <input
-                      type='text'
-                      style={{ display: 'none' }}
-                      id='ldeskuid'
-                      name='ldeskuid'
-                    />
-                    <input
-                      type='text'
-                      style={{ display: 'none' }}
-                      id='LDTuvid'
-                      name='LDTuvid'
-                    />
-                    <Dialog.Panel className='relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full'>
-                      <div className='bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4'>
-                        <div className='mt-3'>
-                          <Dialog.Title
-                            as='h3'
-                            className='text-lg leading-6 font-medium text-gray-900 text-center'
-                          >
-                            Book A Test Drive / Get Offers
-                          </Dialog.Title>
-                          <div className='mt-2 space-y-3'>
-                            <div className='mt-2 py-8 space-y-3'>
-                              <div>
-                                <label className='block text-sm font-medium text-gray-700'>
-                                  Name
-                                </label>
-                                <input
-                                  type='text'
-                                  id='Last_Name'
-                                  name='Last Name'
-                                  onChange={(e) => setName(e.target.value)}
-                                  required
-                                  className='mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border border-gray-600 rounded-md h-10'
-                                />
-                              </div>
-
-                              {/* <div>
-                              <label className='block text-sm font-medium text-gray-700'>
-                                Email
-                              </label>
-                              <input
-                                type='email'
-                                ftype='email'
-                                id='Email'
-                                name='Email'
-                                onChange={(e) => setEmail(e.target.value)}
-                                className='mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border border-gray-600 rounded-md h-10'
-                              />
-                            </div> */}
-
-                              <div>
-                                <label className='block text-sm font-medium text-gray-700'>
-                                  Phone
-                                </label>
-                                <input
-                                  type='text'
-                                  id='Phone'
-                                  name='Phone'
-                                  minLength='10'
-                                  maxLength='10'
-                                  value={phone}
-                                  onChange={(e) =>
-                                    setPhone(
-                                      e.target.value.replace(/[^1-9 ]/g, '') &&
-                                        e.target.value.replace(/ /g, '')
-                                    )
-                                  }
-                                  className='mt-1 px-2 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border border-gray-600 rounded-md h-10'
-                                />
-                                {phone.length > 0 && phone.length < 10 ? (
-                                  <small className='text-red-500'>
-                                    Phone number must be 10 digits
-                                  </small>
-                                ) : !pattern.test(phone) &&
-                                  phone.length === 10 ? (
-                                  <small className='text-red-500'>
-                                    Phone number is invalid
-                                  </small>
-                                ) : (
-                                  ''
-                                )}
-                              </div>
-
-                              <div>
-                                <label className='block text-sm font-medium text-gray-700'>
-                                  Model
-                                </label>
-                                <select
-                                  id='LEADCF6'
-                                  name='LEADCF6'
-                                  onChange={(e) => setModel(e.target.value)}
-                                  className='block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm'
-                                  defaultValue='Brezza'
-                                >
-                                  <option disabled>Select Model</option>
-
-                                  <option value='Brezza'>Brezza</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            {/* <div className='flex items-center space-x-2 mb-5'>
-                            <input
-                              id='comments'
-                              type='checkbox'
-                              className=' h-4 w-4 border-gray-300 rounded'
-                              required
-                            />
-                            <label
-                              htmlFor='comments'
-                              className='text-gray-700 text-sm'
-                            >
-                              I agree to the Privacy Policy and Terms of
-                              Service.
-                            </label>
-                          </div> */}
-                            <div className='flex items-start '>
-                              <div className='ml-2  text-sm'>
-                                <label
-                                  htmlFor='disclaimer'
-                                  className='font-medium text-gray-700'
-                                >
-                                  <span className='text-black font-bold'>
-                                    Disclaimer
-                                  </span>
-                                  <span className='text-black'>
-                                    : By clicking 'SUBMIT', you have agreed to
-                                    our
-                                  </span>
-                                  <a
-                                    href='/maruti-car-terms-and-conditions'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    className='px-2  text-sm  text-red-600 '
-                                  >
-                                    Terms and Conditions
-                                  </a>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse'>
-                        <button
-                          type='submit'
-                          disabled={!checkFormValidity()}
-                          onClick={handleSubmit}
-                          className={`h-10 inline-flex justify-center mr-3 py-2 px-4 mt-4 mb-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white ${
-                            !checkFormValidity()
-                              ? 'bg-gray-400 cursor-not-allowed'
-                              : 'bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500'
-                          }`}
-                        >
-                          {loading ? (
-                            <div className='flex items-center justify-center'>
-                              <CgSpinner className='animate-spin h-5 mr-2 text-white' />
-                              Loading
-                            </div>
-                          ) : (
-                            'SUBMIT'
-                          )}
-                        </button>
-                        <button
-                          type='button'
-                          className={`h-10 inline-flex justify-center mr-3 py-2 px-4 mt-4 mb-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-black  hover:bg-red-700 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-red-500`}
-                          onClick={() => setOpen(false)}
-                          ref={cancelButtonRef}
-                        >
-                          Cancel
-                        </button>
-                      </div>
-                    </Dialog.Panel>
-                  </form>
-                </Transition.Child>
-              </div>
-            </div>
-          </Dialog>
-        </Transition.Root>
       </div>
     </div>
   );

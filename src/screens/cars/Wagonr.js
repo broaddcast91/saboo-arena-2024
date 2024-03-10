@@ -519,8 +519,8 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 
         <div className='my-auto'>
           <div className='flex flex-col items-center sm:flex-row sm:items-start'>
-            <p className='text-3xl font-semibold mb-2 sm:mb-0 sm:mr-4'>
-              Maruti Wagon R
+            <p className='text-3xl font-light mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
+              Maruti Suzuki <span className='font-semibold'>Wagon R</span>
             </p>
             <img
               className='w-12 h-7  mr-2'
@@ -538,11 +538,13 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               alt=''
             />
           </div>
-          <p className='font-semibold'>
+          <p className='font-light text-lg text-blue-800'>
             Ex-Showroom Price
-            <span className='text-red-600 ml-3'>₹&nbsp;5.54 - 7.37 Lakh*</span>
+            <span className='text-red-600 ml-3 text-xl'>
+              ₹&nbsp;5.54 - 7.37 Lakh*
+            </span>
           </p>
-          <div className='flex items-center flex-wrap mt-5'>
+          <div className='flex items-center flex-wrap mt-5 text-blue-800'>
             <div className='flex items-center space-x-3 mr-7'>
               <img
                 src={require('../../assets/icons/speedometer.png')}
@@ -551,7 +553,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               />
               <p className='text-sm'>
                 Engine <br />
-                <span>1197 CC</span>
+                <span className='font-semibold'>1197 CC</span>
               </p>
             </div>
 
@@ -563,7 +565,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               />
               <p className='text-sm'>
                 Mileage <br />
-                <span>25.19 kmpl*</span>
+                <span className='font-semibold'>25.19 kmpl*</span>
               </p>
             </div>
 
@@ -575,20 +577,30 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               />
               <p className='text-sm'>
                 Power (kW) <br />
-                <span>66</span>
+                <span className='font-semibold'>66</span>
               </p>
             </div>
           </div>
-          <div className='flex items-center space-x-2 mt-5 mb-1'>
-            <button
-              className='px-4 py-1.5 text-sm border border-red-600 text-red-600 hover:bg-red-600 hover:text-white duration-500 rounded shadow-sm'
-              onClick={scrollToCarEnquiry}
+          <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 md:mt-5 md:mb-1'>
+            <a
+              href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_WagonR_Brochure.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex-1 block px-4 py-2 text-sm bg-blue-800 text-white hover:bg-red-600 border border-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
-              Get Best Offers
-            </button>
+              View Brochure
+            </a>
+            <a
+              href='/compare-cars'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex-1 block px-4 py-2 text-sm bg-white hover:bg-red-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
+            >
+              Compare
+            </a>
             <Link
               to='/maruti-wagonr-cng-on-road-price-in-hyderabad'
-              className='block px-4 py-1.5 text-sm bg-white hover:bg-green-600 border border-black text-black rounded shadow-sm hover:border-none hover:text-white'
+              className='flex-1 block px-4 py-2 text-sm bg-white hover:bg-green-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
               Get CNG
             </Link>
@@ -604,27 +616,9 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           <BsCalendarCheck className="mr-1" />
           Delivery from Saboo RKS, 7-30 days
         </p> */}
-          <p className='mt-2 mb-5'>
+          <p className='mt-2 mb-5 text-xl text-blue-800'>
             Our professional and well-trained staff is ready to assist you
           </p>
-          <div className='flex items-center space-x-2 mt-5 mb-1'>
-            <a
-              href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/Saboo_RKS_WagonR_Brochure.pdf'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='px-4 py-1.5 text-sm bg-red-600 border hover:bg-red-500 text-white rounded shadow-sm uppercase'
-            >
-              View Brochure
-            </a>
-            <a
-              href='/compare-cars'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='px-4 py-1.5 text-sm border border-red-600 text-red-600 hover:bg-red-600 hover:text-white duration-500 rounded shadow-sm'
-            >
-              Compare
-            </a>
-          </div>
         </div>
       </div>
 

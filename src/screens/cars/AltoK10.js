@@ -236,11 +236,11 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 
         <div className='my-auto'>
           <div className='flex flex-col items-center sm:flex-row sm:items-start'>
-            <p className='text-3xl font-semibold mb-2 sm:mb-0 sm:mr-4'>
-              Maruti Alto K10
+            <p className='text-3xl font-light mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
+              Maruti Suzuki <span className='font-semibold'>Alto K10</span>
             </p>
             <img
-              className='w-12 h-7  mr-2'
+              className='w-12 h-7  mr-2 shadow-2xl'
               src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/icons/AGS.webp'
               alt=''
             />
@@ -255,11 +255,13 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               alt=''
             />
           </div>
-          <p className='font-semibold'>
+          <p className='font-light text-lg text-blue-800'>
             Ex-Showroom Price
-            <span className='text-red-600 ml-3'>₹&nbsp;3.99 - 5.85 Lakh*</span>
+            <span className='text-red-600 ml-3 text-xl'>
+              ₹&nbsp;3.99 - 5.85 Lakh*
+            </span>
           </p>
-          <div className='flex items-center flex-wrap mt-5'>
+          <div className='flex items-center flex-wrap mt-5 text-blue-800'>
             <div className='flex items-center space-x-3 mr-7'>
               <img
                 src={require('../../assets/icons/speedometer.png')}
@@ -268,11 +270,11 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               />
               <p className='text-sm'>
                 Engine <br />
-                <span>998 cc</span>
+                <span className='font-semibold'>998 cc</span>
               </p>
             </div>
 
-            <div className='flex items-center space-x-3 mx-3 mb-1'>
+            <div className='flex items-center space-x-3 mr-7'>
               <img
                 src={require('../../assets/icons/gas-station.png')}
                 className='h-8 w-8'
@@ -280,23 +282,11 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               />
               <p className='text-sm'>
                 Mileage <br />
-                <span>24.90 kmpl*</span>
+                <span className='font-semibold'>24.90 kmpl*</span>
               </p>
             </div>
 
-            {/* <div className="flex items-center space-x-3 mr-7 mb-1">
-              <img
-                src={require("../../assets/icons/gas-bottle.png")}
-                className="h-8 w-8"
-                alt=""
-              />
-              <p className="text-sm">
-                CNG Mileage <br />
-                <span>31.59 km/kg</span>
-              </p>
-            </div> */}
-
-            <div className='flex items-center space-x-3 mr-7 mb-1'>
+            <div className='flex items-center space-x-3 mr-7'>
               <img
                 src={require('../../assets/icons/car.png')}
                 className='h-8 w-8'
@@ -304,20 +294,30 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               />
               <p className='text-sm'>
                 Power (kW) <br />
-                <span>49</span>
+                <span className='font-semibold'>49</span>
               </p>
             </div>
           </div>
-          <div className='flex items-center space-x-2 mt-5 mb-1'>
-            <button
-              className='px-4 py-1.5 text-sm border border-red-600 text-red-600 hover:bg-red-600 hover:text-white duration-500 rounded shadow-sm'
-              onClick={scrollToCarEnquiry}
+          <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 md:mt-5 md:mb-1 '>
+            <a
+              href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/new-alto-k10/alto-k10-brochure.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex-1 block px-4 py-2 text-sm bg-blue-800 text-white hover:bg-red-600 border border-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
-              Get Best Offers
-            </button>
+              View Brochure
+            </a>
+            <Link
+              to='/compare-cars'
+              target='_blank'
+              rel='noopener noreferrer'
+              class='flex-1 block px-4 py-2 text-sm bg-white hover:bg-red-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
+            >
+              Compare
+            </Link>
             <Link
               to='/alto-k10-cng'
-              className='block px-4 py-1.5 text-sm bg-white hover:bg-green-600 border border-black text-black rounded shadow-sm hover:border-none hover:text-white'
+              className='flex-1 block px-4 py-2 text-sm bg-white hover:bg-green-600 border border-blue-800 text-blue-800 rounded-full shadow-sm hover:border-none hover:text-white text-center'
             >
               Get CNG
             </Link>
@@ -327,27 +327,9 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           <BsCalendarCheck className="mr-1" />
           Delivery from Saboo RKS, 7-30 days
         </p> */}
-          <p className='mt-2 mb-5'>
+          <p className='mt-2 mb-5 text-xl text-blue-800'>
             Our professional and well-trained staff is ready to assist you
           </p>
-          <div className='flex items-center space-x-2 mt-5 mb-1'>
-            <a
-              href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/new-alto-k10/alto-k10-brochure.pdf'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='px-4 py-1.5 text-sm bg-red-600 border hover:bg-red-500 text-white rounded shadow-sm uppercase'
-            >
-              View Brochure
-            </a>
-            <a
-              href='/compare-cars'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='px-4 py-1.5 text-sm border border-red-600 text-red-600 hover:bg-red-600 hover:text-white duration-500 rounded shadow-sm'
-            >
-              Compare
-            </a>
-          </div>
         </div>
       </div>
 
