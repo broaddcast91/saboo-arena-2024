@@ -1,23 +1,73 @@
 const eecoSliders = [
   {
+    id: '1',
     original:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/Maruti-Suzuki-Eeco-Front-Left-Side-View.webp',
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/exterior-image-164.webp',
     thumbnail:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/Maruti-Suzuki-Eeco-Front-Left-Side-View.webp',
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/exterior-image-164.webp',
   },
   {
+    id: '2',
     original:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/Maruti-Suzuki-Eeco-Third-Row-Seat-Belts.webp',
-
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/exterior-image-165.webp',
     thumbnail:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/Maruti-Suzuki-Eeco-Third-Row-Seat-Belts.webp',
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/exterior-image-165.webp',
   },
   {
+    id: '3',
     original:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/Maruti-Suzuki-Eeco-Top-View.webp',
-
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/door-handle-45.webp',
     thumbnail:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/Maruti-Suzuki-Eeco-Top-View.webp',
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/door-handle-45.webp',
+  },
+  {
+    id: '4',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/side-view-(right)-38.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/side-view-(right)-38.webp',
+  },
+  {
+    id: '5',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/wheel-42.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/wheel-42.webp',
+  },
+  {
+    id: '6',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/front-left-side-47.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/front-left-side-47.webp',
+  },
+  {
+    id: '7',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/grille-97.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/grille-97.webp',
+  },
+  {
+    id: '8',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/rear-parking-sensors-top-view-156.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/rear-parking-sensors-top-view-156.webp',
+  },
+  {
+    id: '9',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/headlight-43.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/headlight-43.webp',
+  },
+  {
+    id: '10',
+    original:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/side-mirror-(body)-93.webp',
+    thumbnail:
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/data/eeco/slideshow-2024/side-mirror-(body)-93.webp',
   },
 ];
 
