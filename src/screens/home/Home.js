@@ -176,12 +176,12 @@ const Blog = () => {
   return (
     <>
       <section class=''>
-        <div class='py-8 px-4 mx-auto max-w-screen-xl lg:py-1 lg:px-2'>
+        <div class='py-1 px-4 mx-auto max-w-screen-xl lg:py-1 lg:px-2'>
           <div class='mx-auto max-w-screen-sm text-center lg:mb-16 mb-2 '>
             <h2 class='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
               Our Blog
             </h2>
-            <p class='font-light text-gray-500  sm:text-xl'>
+            <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
               Rev Up Your Knowledge: Explore Our Blog for Expert Tips, Trends,
               and Latest news!
             </p>
@@ -212,7 +212,7 @@ const Blog = () => {
                   <span class='mx-2'>•</span>
                   <span class='text-xs'>May 17, 2023</span>
                 </div>
-                <p class='mb-4 text-lg font-normal text-gray-900'>
+                <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   As a part of the Driver Empowerment Programme, Telangana State
                   Minority Finance Corporation (TSMFC) distributed 20 Maruthi
                   Suzuki cars to minority beneficiaries on Tuesday.
@@ -252,7 +252,7 @@ const Blog = () => {
                   <span class='mx-2'>•</span>
                   <span class='text-xs'>February 16, 2024</span>
                 </div>
-                <p class='mb-4 text-lg font-normal text-gray-900'>
+                <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   Maruti Suzuki has revised the prices across its model range
                   with immediate effect. Based on the choice of the car and
                   variant, there are changes in the price tags.
@@ -294,7 +294,7 @@ const Blog = () => {
                   <span class='mx-2'>•</span>
                   <span class='text-xs'>February 19, 2024</span>
                 </div>
-                <p class='mb-4 text-lg font-normal text-gray-900'>
+                <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   The new-gen 2024 Maruti Swift is going to arrive in India very
                   soon. We’ve spotted multiple test mules and the hatchback has
                   also been launched in multiple markets abroad, Germany being
@@ -421,11 +421,11 @@ const Testimonials = () => {
     //     </div>
     //   </div>
     // </section>
-    <div className='container mx-auto my-5 lg:py-10 lg:px-8 py-20 '>
+    <div className='container mx-auto my-5 lg:py-10 lg:px-8 py-20  rounded-3xl  '>
       <p className='text-center mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
         Testimonials
       </p>
-      <p className='mb-8 text-center font-extralight'>
+      <p className='mb-8 font-extralight text-lg text-center'>
         Discover what others have to say
       </p>
       <Swiper

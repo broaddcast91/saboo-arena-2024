@@ -164,22 +164,21 @@ export const WhyChooseUs = () => {
             <h2 class='text-3xl lg:text-4xl font-bold mb-6 text-[#293e91]'>
               Why Choose Us
             </h2>
-            <p class='text-lg text-[#293e91]  max-w-2xl mx-auto mb-12'>
+            <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
               Your trusted source for top-notch vehicles and unparalleled
               service. Find your dream car hassle-free with us!
             </p>
           </div>
 
-          <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
-            {/* <!-- Card 1 --> */}
-            <div class='bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg'>
+          <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8'>
+            <div class='bg-white dark:bg-gray-800 rounded-3xl shadow-md overflow-hidden border border-blue-100 text-center'>
               <div class='p-6'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
-                  class='h-12 w-12 mx-auto text-blue-600 mb-4'
+                  class='h-12 w-12 mx-auto text-blue-800 mb-4'
                 >
                   <path
                     stroke-linecap='round'
@@ -187,25 +186,24 @@ export const WhyChooseUs = () => {
                     d='M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z'
                   />
                 </svg>
-                <h3 class='text-xl font-semibold mb-2 text-gray-900 dark:text-gray-200'>
+                <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Effortless Car Buying
                 </h3>
-                <p class='text-gray-700 dark:text-gray-300'>
+                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   Enjoy a seamless car-buying experience with us. Simply choose
                   your dream car, and we will handle the rest.
                 </p>
               </div>
             </div>
 
-            {/* <!-- Card 2 --> */}
-            <div class='bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg'>
+            <div class='bg-white dark:bg-gray-800 rounded-3xl overflow-hidden border-blue-100 shadow-md border text-center'>
               <div class='p-6'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
-                  class='h-12 w-12 mx-auto text-blue-600 mb-4'
+                  class='h-12 w-12 mx-auto text-blue-800 mb-4'
                 >
                   <path
                     stroke-linecap='round'
@@ -213,25 +211,24 @@ export const WhyChooseUs = () => {
                     d='M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z'
                   />
                 </svg>
-                <h3 class='text-xl font-semibold mb-2 text-gray-900 dark:text-gray-200'>
+                <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Extensive Service Network
                 </h3>
-                <p class='text-gray-700 dark:text-gray-300'>
+                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   Operating at around 22 touchpoints, we are one of the largest
                   automobile dealerships in the state.
                 </p>
               </div>
             </div>
 
-            {/* <!-- Card 3 --> */}
-            <div class='bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg'>
+            <div class='bg-white dark:bg-gray-800 rounded-3xl overflow-hidden border border-blue-100 shadow-md text-center'>
               <div class='p-6'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
-                  class='h-12 w-12 mx-auto text-blue-600 mb-4'
+                  class='h-12 w-12 mx-auto text-blue-800 mb-4'
                 >
                   <path
                     stroke-linecap='round'
@@ -239,25 +236,24 @@ export const WhyChooseUs = () => {
                     d='M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12'
                   />
                 </svg>
-                <h3 class='text-xl font-semibold mb-2 text-gray-900 dark:text-gray-200'>
+                <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Unwavering Reliability
                 </h3>
-                <p class='text-gray-700 dark:text-gray-300'>
+                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   Backed by years of unwavering commitment and expertise, Saboo
                   RKS Motor is a brand with synonymous trust and dependability.
                 </p>
               </div>
             </div>
 
-            {/* <!-- Card 4 --> */}
-            <div class='bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg'>
+            <div class='bg-white dark:bg-gray-800 rounded-3xl overflow-hidden border-blue-100 shadow-md border text-center'>
               <div class='p-6'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
-                  class='h-12 w-12 mx-auto text-blue-600 mb-4'
+                  class='h-12 w-12 mx-auto text-blue-800 mb-4'
                 >
                   <path
                     stroke-linecap='round'
@@ -270,10 +266,10 @@ export const WhyChooseUs = () => {
                     d='M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z'
                   />
                 </svg>
-                <h3 class='text-xl font-semibold mb-2 text-gray-900 dark:text-gray-200'>
+                <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Market Leader
                 </h3>
-                <p class='text-gray-700 dark:text-gray-300'>
+                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
                   We are Telangana's No. 1 Maruti Suzuki Dealer, an automobile
                   dealer of choice.
                 </p>

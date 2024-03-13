@@ -576,7 +576,7 @@ const BookMarutiService = () => {
 
 const Testimonials = () => {
   return (
-    <div className='container mx-auto my-5'>
+    <div className='container mx-auto my-5 '>
       <p className='text-3xl text-blue-800 text-center mb-8'>Reviews</p>
       <Swiper
         slidesPerView={1}

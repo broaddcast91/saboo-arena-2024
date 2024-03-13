@@ -23,13 +23,11 @@ function Cars() {
                   <span className='text-blue-800'>Saboo</span>{' '}
                   <span className='text-red-600'>RKS</span>
                 </p>
-                <p class='max-w-3xl mt-5 mx-auto text-xl text-[#293e91]'>
+                <p class='max-w-9xl mt-5 mx-auto text-lg font-light text-gray-600  tracking-wide'>
                   At Saboo RKS, we're dedicated to providing you with the finest
-                  vehicles that match your style and needs. From sleek
-                  hatchbacks to rugged SUVs, our extensive inventory offers
-                  something for every discerning driver. <br></br>
-                  <br></br>Browse our collection today and experience automotive
-                  excellence like never before.
+                  vehicles that match your style and needs. Browse our
+                  collection today and experience automotive excellence like
+                  never before.
                 </p>
               </div>
             </section>
