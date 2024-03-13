@@ -10,7 +10,7 @@ import {
   altoK10Variants,
   altok10Mileage,
 } from '../../constants/altoK10Data';
-import AltoK10Banner from '../../assets/banners/vehicles/Alto K10 Banner.webp';
+import AltoK10Banner from '../../assets/banners/vehicles/banners-2024/Saboo_RKS_Maruti_Suzuki_Arena_Dealer_In_Hyderabad_Alto_K10.webp';
 import Header from '../../components/header/Header';
 import { Helmet } from 'react-helmet';
 import { toast } from 'react-toastify';

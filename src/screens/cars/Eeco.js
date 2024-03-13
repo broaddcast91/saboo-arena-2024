@@ -1,21 +1,20 @@
 import React, { useState, Fragment, useRef } from 'react';
 // import { BsCalendarCheck } from "react-icons/bs";
-import { useEffect } from 'react';
+
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
-import { Dialog, Transition } from '@headlessui/react';
+// import { Dialog, Transition } from '@headlessui/react';
 import {
   eecoColors,
   eecoSliders,
   eecoVariants,
   eecoMileage,
 } from '../../constants/eecoData';
-import EecoBanner from '../../assets/banners/vehicles/Buy Maruti Suzuki Eeco 2023 in Hyderabad.webp';
-import { CgSpinner } from 'react-icons/cg';
+import EecoBanner from '../../assets/banners/vehicles/banners-2024/Saboo_RKS_Maruti_Suzuki_Arena_Dealer_In_Hyderabad_EECO.webp';
+// import { CgSpinner } from 'react-icons/cg';
 import Header from '../../components/header/Header';
 import { Helmet } from 'react-helmet';
-import { toast } from 'react-toastify';
-import axios from 'axios';
+
 import { CarEnquiryDown } from '../Forms/CarEnquiryDown';
 import { Link } from 'react-router-dom';
 
@@ -402,112 +401,6 @@ function Eeco() {
 // };
 
 const CarsSlider = ({ scrollToCarEnquiry }) => {
-  const [name, setName] = useState('');
-  const [model, setModel] = useState('Eeco');
-  const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [phone, setPhone] = useState('');
-  const cancelButtonRef = useRef(null);
-  const [submitted, setSubmitted] = useState(false);
-
-  const checkFormValidity = () => {
-    return (
-      name.trim() !== '' &&
-      phone.length === 10 &&
-      model.trim() !== '' &&
-      !loading
-    );
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (!name || !phone) {
-      toast.error('Please fill in all required fields.');
-      return;
-    }
-    setLoading(true);
-    try {
-      await axios
-        .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
-          name: name,
-          phone: phone,
-
-          model: model,
-        })
-        .then((res) => {
-          toast.success('Enquiry sent successfully');
-        })
-        .catch((err) => {
-          setLoading(false);
-          toast.error('Something went wrong!');
-          console.log(err);
-        });
-    } catch (error) {
-      // toast.error("Something went wrong!");
-      setLoading(false);
-    }
-
-    try {
-      await axios
-        .post('https://arena-backend-zj42.onrender.com/onRoadPrice', {
-          name: name,
-          phone: phone,
-          // email: email,
-          model: model,
-          // outlet: outlet,
-        })
-        .then((res) => {
-          toast.success('Enquiry sent successfully');
-        })
-        .catch((err) => {
-          setLoading(false);
-          toast.error('Something went wrong!');
-          console.log(err);
-        });
-    } catch (error) {
-      // toast.error("Something went wrong!");
-      setLoading(false);
-    }
-
-    // Second API call
-    await axios
-      .get(
-        `https://www.smsstriker.com/API/sms.php?username=saboorks&password=LqHk1wBeI&from=RKSMOT&to=${phone}&msg=Thank you for showing interest in Maruti Suzuki.
-   Our Sales consultant will contact you shortly.
-   
-   Regards
-   RKS Motor Pvt. Ltd.
-   98488 98488
-   www.saboomaruti.in
-   www.saboonexa.in&type=1&template_id=1407168967467983613`
-      )
-      .then((res) => {
-        console.log('SMS API Response:', res.data);
-        setSubmitted(true);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error('Error sending SMS:', err);
-        setSubmitted(true);
-        setLoading(false);
-      });
-  };
-
-  useEffect(() => {
-    if (submitted) {
-      document.getElementById('eecoPopup').submit();
-    }
-  }, [submitted]);
-
-  const pattern = /^(?![6-9]{10}$)(?!.*(\d)(?:-?\1){9})[6-9]\d{9}$/;
-  if (phone !== '' && phone.length === 10) {
-    if (!pattern.test(phone)) {
-      toast.error('Enter valid phone number', {
-        theme: 'colored',
-      });
-    }
-  }
   return (
     <>
       <div className='container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 my-8 sm:px-0 px-5'>

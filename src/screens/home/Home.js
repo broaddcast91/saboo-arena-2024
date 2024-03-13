@@ -21,9 +21,6 @@ import Header from '../../components/header/Header';
 
 import { Helmet } from 'react-helmet';
 import { WhyChooseUs } from '../../components/home/About';
-// import { Link } from 'react-router-dom';
-
-// import Header2 from '../../components/header/Header2';
 
 function Home() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -115,65 +112,65 @@ function Home() {
   );
 }
 
-const LocationsatHomePage = () => {
-  return (
-    <>
-      <div class='container relative mx-auto mt-3'>
-        <div class='m-3 grid grid-cols-1 gap-4 md:grid-cols-2 bg-gray-100 rounded-2xl'>
-          <div class='col-span-1 flex flex-col gap-4 p-4 md:p-2'>
-            <div class='md-3 border-red-500 p-4 md:p-8'>
-              <div class='border-b-2 pb-4 text-4xl font-bold md:pb-8 md:text-6xl text-[#293e91]'>
-                Locations
-              </div>
-              <p class='border-b-2 pb-4 mt-4 text-sm md:pb-8 md:text-lg text-[#293e91]'>
-                Explore our showroom of quality vehicles, conveniently located
-                in Hyderabad to serve you better on every journey.
-              </p>
-            </div>
-            <div class=''>
-              <div class='grid grid-cols-1 gap-4 md:grid-cols-2'>
-                <div class='relative overflow-hidden rounded-2xl'>
-                  <a href='https://www.google.com/maps/place/Saboo+RKS+Motor+-+Maruti+Suzuki+Car+Dealer+(Malakpet,+Hyderabad)/@17.371254,78.512446,15z/data=!4m6!3m5!1s0x3bcb985a78a7f883:0xad5bb6113d36bffc!8m2!3d17.3712538!4d78.5124463!16s%2Fg%2F11bbrj30gb?hl=en&entry=ttu'>
-                    <img
-                      src='https://lh3.googleusercontent.com/p/AF1QipNy727I0UpGe1yIhQ67wPOoE_PF4LnNiNn8K32S=s1360-w1360-h1020'
-                      class='h-64 w-full  object-cover md:h-full transform transition-transform duration-200 hover:scale-105'
-                    />
-                    <div class='absolute bottom-0 left-0 m-4 text-lg font-bold text-white'>
-                      Malakpet
-                    </div>
-                  </a>
-                </div>
-                <div class='relative overflow-hidden rounded-2xl'>
-                  <a href='https://www.google.com/maps/place/Saboo+RKS+Motor+-+Maruti+Suzuki+Car+Dealer+(Narsingi,+Hyderabad)/@17.3837654,78.3631478,15z/data=!4m6!3m5!1s0x3bcb958150dd4c01:0x2d0aecdb5b3523de!8m2!3d17.3837654!4d78.3631478!16s%2Fg%2F11v07h42w1?entry=ttu'>
-                    <img
-                      src='https://lh3.googleusercontent.com/p/AF1QipP0QArklxlSs_OhkZcF9a9boJuPTyqKmw6D2iah=s1360-w1360-h1020'
-                      class='h-64 w-full  object-cover md:h-full transform transition-transform duration-200 hover:scale-105 shadow-xl'
-                    />
-                    <div class='absolute bottom-0 left-0 m-4 text-lg font-bold text-white'>
-                      Narsingi
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+// const LocationsatHomePage = () => {
+//   return (
+//     <>
+//       <div class='container relative mx-auto mt-3'>
+//         <div class='m-3 grid grid-cols-1 gap-4 md:grid-cols-2 bg-gray-100 rounded-2xl'>
+//           <div class='col-span-1 flex flex-col gap-4 p-4 md:p-2'>
+//             <div class='md-3 border-red-500 p-4 md:p-8'>
+//               <div class='border-b-2 pb-4 text-4xl font-bold md:pb-8 md:text-6xl text-[#293e91]'>
+//                 Locations
+//               </div>
+//               <p class='border-b-2 pb-4 mt-4 text-sm md:pb-8 md:text-lg text-[#293e91]'>
+//                 Explore our showroom of quality vehicles, conveniently located
+//                 in Hyderabad to serve you better on every journey.
+//               </p>
+//             </div>
+//             <div class=''>
+//               <div class='grid grid-cols-1 gap-4 md:grid-cols-2'>
+//                 <div class='relative overflow-hidden rounded-2xl'>
+//                   <a href='https://www.google.com/maps/place/Saboo+RKS+Motor+-+Maruti+Suzuki+Car+Dealer+(Malakpet,+Hyderabad)/@17.371254,78.512446,15z/data=!4m6!3m5!1s0x3bcb985a78a7f883:0xad5bb6113d36bffc!8m2!3d17.3712538!4d78.5124463!16s%2Fg%2F11bbrj30gb?hl=en&entry=ttu'>
+//                     <img
+//                       src='https://lh3.googleusercontent.com/p/AF1QipNy727I0UpGe1yIhQ67wPOoE_PF4LnNiNn8K32S=s1360-w1360-h1020'
+//                       class='h-64 w-full  object-cover md:h-full transform transition-transform duration-200 hover:scale-105'
+//                     />
+//                     <div class='absolute bottom-0 left-0 m-4 text-lg font-bold text-white'>
+//                       Malakpet
+//                     </div>
+//                   </a>
+//                 </div>
+//                 <div class='relative overflow-hidden rounded-2xl'>
+//                   <a href='https://www.google.com/maps/place/Saboo+RKS+Motor+-+Maruti+Suzuki+Car+Dealer+(Narsingi,+Hyderabad)/@17.3837654,78.3631478,15z/data=!4m6!3m5!1s0x3bcb958150dd4c01:0x2d0aecdb5b3523de!8m2!3d17.3837654!4d78.3631478!16s%2Fg%2F11v07h42w1?entry=ttu'>
+//                     <img
+//                       src='https://lh3.googleusercontent.com/p/AF1QipP0QArklxlSs_OhkZcF9a9boJuPTyqKmw6D2iah=s1360-w1360-h1020'
+//                       class='h-64 w-full  object-cover md:h-full transform transition-transform duration-200 hover:scale-105 shadow-xl'
+//                     />
+//                     <div class='absolute bottom-0 left-0 m-4 text-lg font-bold text-white'>
+//                       Narsingi
+//                     </div>
+//                   </a>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
 
-          <div class='relative col-span-1 p-2'>
-            <a href='https://www.google.com/maps/place/Maruti+Suzuki+Arena+-+Saboo+RKS+Motor+Pvt.+Ltd/@17.4241643,78.4573371,15z/data=!4m2!3m1!1s0x0:0x1e0a3e3dabcb8701?sa=X&ved=2ahUKEwikovmhtNCEAxUGR2wGHSDqCIsQ_BJ6BAgTEAA'>
-              <img
-                src='https://lh3.googleusercontent.com/p/AF1QipPPhdZg3FHrFoQHEjjWOkXbgwy0bV0CdArxl0Jj=s1360-w1360-h1020'
-                class='h-64 w-full rounded-2xl object-cover md:h-full transform transition-transform duration-200 hover:scale-105 shadow-xl'
-              />
-              <div class='absolute bottom-0 left-0 m-6 text-5xl font-bold text-white'>
-                Somajiguda
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+//           <div class='relative col-span-1 p-2'>
+//             <a href='https://www.google.com/maps/place/Maruti+Suzuki+Arena+-+Saboo+RKS+Motor+Pvt.+Ltd/@17.4241643,78.4573371,15z/data=!4m2!3m1!1s0x0:0x1e0a3e3dabcb8701?sa=X&ved=2ahUKEwikovmhtNCEAxUGR2wGHSDqCIsQ_BJ6BAgTEAA'>
+//               <img
+//                 src='https://lh3.googleusercontent.com/p/AF1QipPPhdZg3FHrFoQHEjjWOkXbgwy0bV0CdArxl0Jj=s1360-w1360-h1020'
+//                 class='h-64 w-full rounded-2xl object-cover md:h-full transform transition-transform duration-200 hover:scale-105 shadow-xl'
+//               />
+//               <div class='absolute bottom-0 left-0 m-6 text-5xl font-bold text-white'>
+//                 Somajiguda
+//               </div>
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 const Blog = () => {
   return (

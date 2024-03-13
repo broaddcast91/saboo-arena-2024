@@ -10,17 +10,17 @@ const PriceList = () => {
   const [celerioprice, setcelerioPrice] = useState('5,36,500');
   const [wagonrprice, setwagonrPrice] = useState('5,54,500');
   const [swiftprice, setswiftPrice] = useState('5,99,450');
-  const [dzireprice, setdzirePrice] = useState('6,51,500');
-  const [brezzaprice, setbrezzaPrice] = useState('8,29,000');
-  const [ertigaprice, setertigaPrice] = useState('8,64,000');
-  const [eecoprice, seteecoPrice] = useState('5,27,000');
+  const [dzireprice, setdzirePrice] = useState('6,56,500');
+  const [brezzaprice, setbrezzaPrice] = useState('8,34,000');
+  const [ertigaprice, setertigaPrice] = useState('8,69,000');
+  const [eecoprice, seteecoPrice] = useState('5,32,000');
 
   return (
     <div class='header'>
-      <nav class='bg-white py-2 md:py-4 bg-blue-800'>
+      <nav class='py-2 md:py-4 bg-blue-800'>
         <div class='container px-2 mx-auto md:flex md:items-center'>
           <div class='flex justify-between items-center'>
-            <a href='#' class='font-bold text-xl text-indigo-600'>
+            <a href='#' class='font-bold text-xl text-white-600'>
               {' '}
               <img
                 className='h-12 w-auto'
@@ -40,17 +40,20 @@ const PriceList = () => {
             class='hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0'
             id='navbar-collapse'
           >
-            <a href='#' class='p-2 lg:px-4 md:mx-2 text-xl text-white rounded'>
+            <a
+              href='#'
+              class='p-2 lg:px-4 md:mx-2 text-3xl text-white font-bold rounded'
+            >
               Price List
             </a>
           </div>
         </div>
       </nav>
 
-      <div class='bg-indigo-100 py-6 md:py-12'>
+      <div class='bg-blue-100 py-6 md:py-12'>
         <div class='container mx-auto px-4 sm:px-8'>
-          <h1 class='block text-3xl font-semibold text-center my-auto'>
-            Arena Price List
+          <h1 class='block text-3xl font-extralight text-center my-auto'>
+            Arena Cars
           </h1>
           <div class='py-2'>
             {/* <div>
@@ -107,11 +110,11 @@ const PriceList = () => {
                               className='block w-full max-w-[200px] py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm'
                             >
                               <option value='3,54,000'>STD (O)</option>
-                              <option value='4,23,000'>LXI (O)</option>
+                              <option value='4,23,500'>LXI (O)</option>
                               <option value='4,43,000'>VXI</option>
                               <option value='4,56,500'>VXI+</option>
+
                               <option value='5,13,000'>LXI (O) CNG</option>
-                              <option value='4,20,000'>ALTO TOUR H1 (O)</option>
                             </select>
                           </div>
                         </p>
@@ -123,7 +126,12 @@ const PriceList = () => {
                             class='absolute inset-0 opacity-50 rounded-full'
                           ></span>
                           <div className='py-2 lg:text-lg sm:text-sm'>
-                            {price}
+                            <span className='font-extralight text-xs'>₹</span>
+                            &nbsp;
+                            {price}{' '}
+                            <span className='font-extralight text-xs'>
+                              Lakhs
+                            </span>
                           </div>
                         </span>
                       </td>
@@ -159,10 +167,10 @@ const PriceList = () => {
                           <option value='3,99,000'>STD</option>
                           <option value='4,83,500'>LXI</option>
                           <option value='5,06,000'>VXI</option>
-                          <option value='4,96,000'>VXI CNG</option>
+                          <option value='5,96,000'>VXI CNG</option>
                           <option value='5,35,000'>VXI+</option>
-                          <option value='5,61,000'>VXI AGS</option>
-                          <option value='5,90,000'>VXI+ AGS</option>
+                          <option value='5,56,000'>VXI AGS</option>
+                          <option value='5,85,000'>VXI+ AGS</option>
                         </select>
                       </td>
                       <td class='px-5 py-5 border-b border-gray-200 bg-white text-sm'>
@@ -172,7 +180,11 @@ const PriceList = () => {
                             class='absolute inset-0 opacity-50 rounded-full'
                           ></span>
                           <span class='relative lg:text-lg sm:text-sm'>
-                            {altok10price}
+                            <span className='font-extralight text-xs'>₹</span>
+                            &nbsp; {altok10price}{' '}
+                            <span className='font-extralight text-xs'>
+                              Lakhs
+                            </span>
                           </span>
                         </span>
                       </td>
@@ -209,8 +221,8 @@ const PriceList = () => {
                           <option value='5,01,500'>LXI</option>
                           <option value='5,21,500'>VXI</option>
                           <option value='5,50,500'>VXI+</option>
-                          <option value='5,76,500'>VXI AGS</option>
-                          <option value='6,05,500'>VXI+ AGS</option>
+                          <option value='5,71,500'>VXI AGS</option>
+                          <option value='6,00,500'>VXI+ AGS</option>
                           <option value='5,91,500'>LXI CNG</option>
                           <option value='6,11,500'>VXI CNG</option>
                         </select>
@@ -257,10 +269,10 @@ const PriceList = () => {
                           <option value='5,83,500'>VXI</option>
                           <option value='6,11,500'>ZXI</option>
                           <option value='6,59,500'>ZXI+</option>
-                          <option value='6,38,500'>VXI AGS</option>
+                          <option value='6,33,500'>VXI AGS</option>
 
-                          <option value='6,66,500'>ZXI AGS</option>
-                          <option value='7,14,500'>ZXI+ AGS</option>
+                          <option value='6,61,500'>ZXI AGS</option>
+                          <option value='7,09,500'>ZXI+ AGS</option>
                           <option value='6,73,500'>VXI CNG</option>
                         </select>
                       </td>
@@ -608,8 +620,8 @@ const PriceList = () => {
                   </tbody>
                 </table>
               </div>
-              <h1 class='block text-3xl font-semibold text-center py-6'>
-                Nexa Price List
+              <h1 class='block text-3xl font-extralight text-center py-6'>
+                Nexa Cars
               </h1>
               <NexaPriceList />
             </div>

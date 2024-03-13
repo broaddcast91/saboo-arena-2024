@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { toast } from 'react-toastify';
 import { Tab } from '@headlessui/react';
-import { FaPhoneAlt, FaEnvelope, FaCar } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Header from '../../components/header/Header';
 import { Helmet } from 'react-helmet';
@@ -21,7 +21,7 @@ function Contact() {
   const [outlet, setOutlet] = useState('');
   const [model, setModel] = useState('');
   const [modelError, setModelError] = useState('');
-  const [selectedModel, setSelectedModel] = useState('');
+  // const [selectedModel, setSelectedModel] = useState('');
   const [subject, setSubject] = useState('');
   // const [method, setMethod] = useState();
   const [message, setMessage] = useState('');

@@ -93,19 +93,19 @@ function App() {
   const [open, setOpen] = useState(false);
   // const [loading, setLoading] = useState(false);
 
-  const ScrollTop = () => {
-    const { pathname } = useLocation();
-    useEffect(() => {
-      window.scrollTo(0, 0);
-      setTimeout(() => {
-        if (sessionStorage.getItem('popup') !== 'true') {
-          setOpen(true);
-          sessionStorage.setItem('popup', 'true');
-        }
-      }, 1000);
-    }, [pathname]);
-    return null;
-  };
+  // const ScrollTop = () => {
+  //   const { pathname } = useLocation();
+  //   useEffect(() => {
+  //     window.scrollTo(0, 0);
+  //     setTimeout(() => {
+  //       if (sessionStorage.getItem('popup') !== 'true') {
+  //         setOpen(true);
+  //         sessionStorage.setItem('popup', 'true');
+  //       }
+  //     }, 1000);
+  //   }, [pathname]);
+  //   return null;
+  // };
 
   const Popup = () => {
     return (
@@ -191,7 +191,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <ScrollTop />
         <Popup />
         <ToastContainer />
         <Routes>

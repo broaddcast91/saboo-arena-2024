@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
-import AltoBanner from '../../assets/banners/vehicles/Maruti Suzuki Alto 800 Price in Hyderabad.webp';
+import AltoBanner from '../../assets/banners/vehicles/banners-2024/Saboo_RKS_Maruti_Suzuki_Arena_Dealer_In_Hyderabad_Alto800.webp';
 import {
   altoColors,
   altoSliders,
