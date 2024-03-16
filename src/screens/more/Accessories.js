@@ -60,7 +60,7 @@ const Accessory = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className='text-center'>
+        <div className='text-center' id='accessories'>
           <h1 className='text-xl md:text-2xl lg:text-3xl pt-2 font-semibold'>
             ACCESSORIES
           </h1>

@@ -1,4 +1,5 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { CgSpinner } from 'react-icons/cg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -88,24 +89,25 @@ import Careers from './screens/Careers/Careers';
 
 import Header2 from './components/header/Header2';
 import NewBlog from './screens/more/NewBlog';
+import ArenaSitemap from './screens/more/ArenaSitemap';
 
 function App() {
   const [open, setOpen] = useState(false);
   // const [loading, setLoading] = useState(false);
 
-  // const ScrollTop = () => {
-  //   const { pathname } = useLocation();
-  //   useEffect(() => {
-  //     window.scrollTo(0, 0);
-  //     setTimeout(() => {
-  //       if (sessionStorage.getItem('popup') !== 'true') {
-  //         setOpen(true);
-  //         sessionStorage.setItem('popup', 'true');
-  //       }
-  //     }, 1000);
-  //   }, [pathname]);
-  //   return null;
-  // };
+  const ScrollTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+      setTimeout(() => {
+        if (sessionStorage.getItem('popup') !== 'true') {
+          setOpen(true);
+          sessionStorage.setItem('popup', 'true');
+        }
+      }, 1000);
+    }, [pathname]);
+    return null;
+  };
 
   const Popup = () => {
     return (
@@ -192,7 +194,9 @@ function App() {
     <>
       <BrowserRouter>
         <Popup />
+        <ScrollTop />
         <ToastContainer />
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/header' element={<Header2 />} />
@@ -355,6 +359,7 @@ function App() {
           <Route path='/thank-you-for-contact-us' element={<ThankYou />} />
           <Route path='/faq' element={<Faq />} />
           <Route path='/pricelist' element={<PriceList />} />
+          <Route path='/arenasitemap' element={<ArenaSitemap />} />
           {/*====== Not Found ======*/}
           <Route path='*' element={<NotFound />} />
         </Routes>

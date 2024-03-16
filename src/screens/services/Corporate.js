@@ -172,7 +172,10 @@ function Corporate() {
         className='w-full lg:mt-16'
         alt='1'
       />
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 container mx-auto my-5'>
+      <div
+        className='grid grid-cols-1 md:grid-cols-2 gap-4 container mx-auto my-5'
+        id='corporate'
+      >
         <div className='bg-white border shadow-md rounded p-5 mx-5'>
           <p className='font-bold text-xl'>Corporate Form</p>
           <p className='text-sm mb-5'>

@@ -629,7 +629,8 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           <BsCalendarCheck className="mr-1" />
           Delivery from Saboo RKS, 7-30 days
         </p> */}
-          <p className='mt-2 mb-5 text-xl text-blue-800'>
+          <p className='mt-2 mb-5 text-xl text-blue-800'
+          x-intersect="$el.classList.add('fade-in-left')">
             Our professional and well-trained staff is ready to assist you
           </p>
         </div>
@@ -733,7 +734,7 @@ const PriceTable = () => {
           {ertigaVariants?.map((item) => (
             <tr
               key={item.id}
-              className='border-b border-gray-200 hover:bg-gray-100'
+              className='border-b border-gray-200 hover:bg-gray-100 uppercase'
             >
               <td className='py-3 px-4'>{item.title}</td>
               <td className='py-3 px-4'>{item.transmission}</td>
@@ -758,7 +759,7 @@ const PriceTable = () => {
           {ertigaMileage?.map((item) => (
             <tr
               key={item.id}
-              className='border-b border-gray-200 hover:bg-gray-100'
+              className='border-b border-gray-200 hover:bg-gray-100 uppercase'
             >
               <td className='py-3 px-4'>{item.fueltype}</td>
               <td className='py-3 px-4'>{item.transmission}</td>
@@ -769,6 +770,17 @@ const PriceTable = () => {
           ))}
         </tbody>
       </table>
+      <div className='overflow-scroll md:overflow-hidden'>
+        <p className='w-full container mx-auto my-auto text-left text-sm italic font-extralight text-red-500 mt-2 pb-6'>
+          <span className='font-semibold'>Disclaimer:</span> The prices and
+          mileage information provided in the table above are indicative and
+          subject to change. The actual prices and mileage of Maruti Suzuki
+          vehicles may vary based on factors such as location, dealer, variant,
+          and other applicable conditions. For the most accurate and up-to-date
+          information, please contact your nearest Saboo RKS Motor Maruti Suzuki
+          dealership.
+        </p>
+      </div>
     </div>
   );
 };

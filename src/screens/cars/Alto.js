@@ -93,7 +93,7 @@ export function Alto() {
           {/* Table and PriceTable */}
           <div className='mt-8'>
             <Table />
-            <PriceTable />
+            {/* <PriceTable /> */}
           </div>
         </div>
       </div>
@@ -223,7 +223,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 
         <div className='my-auto '>
           <div className='flex flex-col items-center sm:flex-row sm:items-start'>
-            <p className='text-3xl font-light mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
+            <p className='text-4xl font-light mb-2 sm:mb-0 sm:mr-4 text-blue-800'>
               Maruti Suzuki <span className='font-semibold'>Alto</span>
             </p>
             <img
@@ -232,10 +232,12 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
               alt=''
             />
           </div>
-          <p className='font-light text-lg text-blue-800'>
+          <p className='font-light text-blue-800 text-md'>
             Ex-Showroom Price
             <span className='text-red-600 ml-3 text-xl'>
-              ₹&nbsp;3.54 - 5.13 Lakh*
+              <span className='text-xs'>₹</span> &nbsp;3.54 - 5.13{' '}
+              <span className='text-xs'>Lakh</span>
+              <sup>*</sup>
             </span>
           </p>
           <div className='flex items-center flex-wrap mt-5 text-blue-800 '>
@@ -300,7 +302,10 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           </div>
 
           <p className='h-px my-6 w-full bg-gray-300'></p>
-          <p className='mt-2 mb-5 text-xl text-blue-800'>
+          <p
+            className='mt-2 mb-5 text-xl text-blue-800'
+            x-intersect="$el.classList.add('fade-in-left')"
+          >
             Our professional and well-trained staff is ready to assist you.
           </p>
         </div>
@@ -374,11 +379,15 @@ const Table = () => {
           {altoVariants?.map((item) => (
             <tr
               key={item.id}
-              className='border-b border-gray-200 hover:bg-gray-100'
+              className='border-b border-gray-200 hover:bg-gray-100  uppercase'
             >
               <td className='py-3 px-4  '>{item.title}</td>
-              <td className='py-3 px-4 '>{item.transmission}</td>
-              <td className='py-3 px-4'>{item.price}</td>
+              <td className='py-3 px-4'>{item.transmission}</td>
+              <td className='py-3 px-4'>
+                <span className='text-xs'>₹</span>
+                <span className='text-xl '>{item.price}</span>
+                <span className='text-xs'>Lakh</span>
+              </td>
             </tr>
           ))}
         </tbody>
@@ -399,12 +408,12 @@ const Table = () => {
           {altoMileage?.map((item) => (
             <tr
               key={item.id}
-              className='border-b border-gray-200 hover:bg-gray-100'
+              className='border-b border-gray-200 hover:bg-gray-100 uppercase'
             >
               <td className='py-3 px-4'>{item.title}</td>
               <td className='py-3 px-4'>{item.transmission}</td>
-              <td className='py-3 px-4'>
-                {item.mileage}{' '}
+              <td className='py-3 px-4 text-xl'>
+                {item.mileage} <span className='text-xs'>KM/KG</span>
                 <span className='font-extralight'>
                   <sup>*</sup>
                 </span>
@@ -413,23 +422,17 @@ const Table = () => {
           ))}
         </tbody>
       </table>
-    </div>
-  );
-};
-
-const PriceTable = () => {
-  return (
-    <div className='overflow-scroll md:overflow-hidden'>
-      <table className='table-auto border-collapse border border-slate-400 uppercase w-full container mx-auto my-8 text-left text-sm'></table>
-      <p className='w-full container mx-auto my-auto text-left text-sm italic font-extralight text-red-500'>
-        <span className='font-semibold'>Disclaimer:</span> The prices and
-        mileage information provided in the table above are indicative and
-        subject to change. The actual prices and mileage of Maruti Suzuki
-        vehicles may vary based on factors such as location, dealer, variant,
-        and other applicable conditions. For the most accurate and up-to-date
-        information, please contact your nearest Saboo RKS Motor Maruti Suzuki
-        dealership.
-      </p>
+      <div className='overflow-scroll md:overflow-hidden'>
+        <p className='w-full container mx-auto my-auto text-left text-sm italic font-extralight text-red-500 mt-2 pb-6'>
+          <span className='font-semibold'>Disclaimer:</span> The prices and
+          mileage information provided in the table above are indicative and
+          subject to change. The actual prices and mileage of Maruti Suzuki
+          vehicles may vary based on factors such as location, dealer, variant,
+          and other applicable conditions. For the most accurate and up-to-date
+          information, please contact your nearest Saboo RKS Motor Maruti Suzuki
+          dealership.
+        </p>
+      </div>
     </div>
   );
 };

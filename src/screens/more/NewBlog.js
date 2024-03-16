@@ -24,7 +24,7 @@ const NewBlog = () => {
   return (
     <>
       <Header />
-      <div className='container mx-auto pt-14 mt-10 '>
+      <div className='container mx-auto pt-14 mt-10 ' id='blog'>
         <div className='flex flex-col items-center sm:px-5 md:flex-row border bg-white rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg border-gray-300'>
           <div className='w-full md:w-1/2'>
             <a href='#_' className='block'>

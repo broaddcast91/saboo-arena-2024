@@ -562,7 +562,10 @@ const Careers = () => {
             <span className='hover-text bg-white opacity-5'>Home</span>
           </a>
 
-          <h1 className='text-2xl sm:text-4xl font-bold text-center p-2 sm:p-4 text-blue-900'>
+          <h1
+            className='text-2xl sm:text-4xl font-bold text-center p-2 sm:p-4 text-blue-900'
+            id='careers'
+          >
             Join Our Team - Application Form
           </h1>
         </div>

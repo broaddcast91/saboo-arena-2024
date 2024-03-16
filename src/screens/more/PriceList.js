@@ -20,7 +20,7 @@ const PriceList = () => {
       <nav class='py-2 md:py-4 bg-blue-800'>
         <div class='container px-2 mx-auto md:flex md:items-center'>
           <div class='flex justify-between items-center'>
-            <a href='#' class='font-bold text-xl text-white-600'>
+            <a href='/#' class='font-bold text-xl text-white-600'>
               {' '}
               <img
                 className='h-12 w-auto'
@@ -41,7 +41,7 @@ const PriceList = () => {
             id='navbar-collapse'
           >
             <a
-              href='#'
+              href='/#'
               class='p-2 lg:px-4 md:mx-2 text-3xl text-white font-bold rounded'
             >
               Price List

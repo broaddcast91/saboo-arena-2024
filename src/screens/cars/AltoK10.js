@@ -327,7 +327,10 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
           <BsCalendarCheck className="mr-1" />
           Delivery from Saboo RKS, 7-30 days
         </p> */}
-          <p className='mt-2 mb-5 text-xl text-blue-800'>
+          <p
+            className='mt-2 mb-5 text-xl text-blue-800'
+            x-intersect="$el.classList.add('fade-in-left')"
+          >
             Our professional and well-trained staff is ready to assist you
           </p>
         </div>
@@ -703,50 +706,17 @@ const PriceTable = () => {
           ))}
         </tbody>
       </table>
-    </div>
-  );
-};
-const Table = () => {
-  return (
-    <div className='overflow-scroll md:overflow-hidden'>
-      <table className='table-auto border-collapse border border-slate-400 uppercase w-full container mx-auto my-8 text-left text-sm'>
-        <thead className='bg-blue-800 text-white'>
-          <tr>
-            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
-              Variants
-            </th>
-            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
-              Transmission
-            </th>
-            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
-              Mileage
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {altoK10Variants?.map((item) => (
-            <tr
-              key={item.id}
-              className='border-b border-gray-200 hover:bg-gray-100'
-            >
-              <td className='py-3 px-4'>{item.title}</td>
-              <td className='py-3 px-4'>{item.transmission}</td>
-              <td className='py-3 px-4'>
-                {item.mileage} <sup>*</sup>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className='w-full container mx-auto my-auto text-left text-sm italic font-extralight text-red-500'>
-        <span className='font-semibold'>Disclaimer:</span> The prices and
-        mileage information provided in the table above are indicative and
-        subject to change. The actual prices and mileage of Maruti Suzuki
-        vehicles may vary based on factors such as location, dealer, variant,
-        and other applicable conditions. For the most accurate and up-to-date
-        information, please contact your nearest Saboo RKS Motor Maruti Suzuki
-        dealership.
-      </p>
+      <div className='overflow-scroll md:overflow-hidden'>
+        <p className='w-full container mx-auto my-auto text-left text-sm italic font-extralight text-red-500 mt-2 pb-6'>
+          <span className='font-semibold'>Disclaimer:</span> The prices and
+          mileage information provided in the table above are indicative and
+          subject to change. The actual prices and mileage of Maruti Suzuki
+          vehicles may vary based on factors such as location, dealer, variant,
+          and other applicable conditions. For the most accurate and up-to-date
+          information, please contact your nearest Saboo RKS Motor Maruti Suzuki
+          dealership.
+        </p>
+      </div>
     </div>
   );
 };

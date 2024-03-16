@@ -155,6 +155,7 @@ function Insurance() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Saboo-Maruti-Suzuki-Insurance-Banner.webp'
         className='max-w-full w-full lg:mt-16'
         alt='inusrance banner'
+        id='insurance'
       />
       <div className='container mx-auto py-16 px-5'>
         <p className='text-red-500 font-semibold text-2xl'>Maruti Insurance</p>

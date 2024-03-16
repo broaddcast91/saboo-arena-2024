@@ -26,7 +26,10 @@ function Compare() {
   return (
     <>
       <Header />
-      <div className='container my-15 mx-auto px-4 md:px-3 mt-28 drop-shadow-xl'>
+      <div
+        className='container my-15 mx-auto px-4 md:px-3 mt-28 drop-shadow-xl'
+        id='compare'
+      >
         <p className='text-3xl text-blue-800 text-center '>Compare Cars</p>
         <p className='mb-8 text-center text-red-600'>
           {' '}

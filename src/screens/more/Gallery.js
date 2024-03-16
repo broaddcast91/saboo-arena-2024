@@ -141,7 +141,7 @@ function Gallery() {
         className='max-w-full w-full'
         alt='Gallery banner'
       />
-      <div className='shadow sm:px-0 px-4'>
+      <div className='shadow sm:px-0 px-4' id='gallery'>
         <p className='mx-auto container py-4'>
           <Link to='/'>Home</Link> / Gallery
         </p>

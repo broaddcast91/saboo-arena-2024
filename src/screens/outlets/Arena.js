@@ -73,7 +73,7 @@ function Arena() {
           </div>
         </div>
       </div> */}
-      <div className='my-8'>
+      <div className='my-8' id='showrooms'>
         <p className='font-semibold text-3xl text-center'>Showrooms</p>
         <div className='container mx-auto pt-16'>
           <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-3 md:px-0 gap-5'>

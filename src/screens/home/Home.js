@@ -178,10 +178,16 @@ const Blog = () => {
       <section class=''>
         <div class='py-1 px-4 mx-auto max-w-screen-xl lg:py-1 lg:px-2'>
           <div class='mx-auto max-w-screen-sm text-center lg:mb-16 mb-2 '>
-            <h2 class='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
+            <h2
+              class='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'
+              x-intersect="$el.classList.add('tracking-in-expand')"
+            >
               Our Blog
             </h2>
-            <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
+            <p
+              class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'
+              x-intersect="$el.classList.add('fade-in-bottom')"
+            >
               Rev Up Your Knowledge: Explore Our Blog for Expert Tips, Trends,
               and Latest news!
             </p>
@@ -421,11 +427,20 @@ const Testimonials = () => {
     //     </div>
     //   </div>
     // </section>
-    <div className='container mx-auto my-5 lg:py-10 lg:px-8 py-20  rounded-3xl  '>
-      <p className='text-center mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'>
+    <section
+      className='container mx-auto my-5 lg:py-10 lg:px-8 py-20  rounded-3xl  '
+      id='testimonials'
+    >
+      <p
+        className='text-center mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#293e91]'
+        x-intersect="$el.classList.add('tracking-in-expand')"
+      >
         Testimonials
       </p>
-      <p className='mb-8 font-extralight text-lg text-center'>
+      <p
+        className='mb-8 font-extralight text-lg text-center'
+        x-intersect="$el.classList.add('fade-in-bottom')"
+      >
         Discover what others have to say
       </p>
       <Swiper
@@ -472,7 +487,7 @@ const Testimonials = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

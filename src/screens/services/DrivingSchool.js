@@ -65,6 +65,7 @@ function DrivingSchool() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/saboo-driving-school-december-2023.webp'
         className='w-full mt-16'
         alt='default - dont delete'
+        id='drivingschool'
       />
       {/* <RegisterInterest /> */}
       {/* <CarEnquiry /> */}
@@ -317,7 +318,7 @@ const DrivingSchoolEnquiry = ({ title, carName }) => {
   }
 
   return (
-    <div className='bg-blue-800 py-12 mt-12'>
+    <div className='bg-blue-800 py-12 mt-12' id='dsenquiry'>
       <div className='container mx-auto space-y-5 lg:px-0 px-5'>
         <h3 className='text-xl font-normal text-white normal-case'>
           Start Your Driving Journey

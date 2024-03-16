@@ -65,7 +65,7 @@ function About() {
       />
       <div className='container mx-auto px-5 shadow-md border rounded-md p-2 leading-loose text-center'>
         <p className='text-gray-100'>
-          <span className='text-blue-900 font-medium'>
+          <span className='text-blue-900 font-medium' id='aboutsaboo'>
             For over four decades, Saboo RKS has been the driving force behind
             the growth of automobile sales and service in Hyderabad, solidifying
             our position as the city's premier automobile dealership. Since our
@@ -122,7 +122,7 @@ function About() {
         </p> */}
       </div>
       <br></br>
-      <div className='container mx-auto px-5 text-center py-6'>
+      <div className='container mx-auto px-5 text-center py-6' id='about'>
         <h2 className='text-red-500 font-medium text-5xl p-2'>
           OUR MANAGEMENT
         </h2>
@@ -134,7 +134,10 @@ function About() {
         </p>
       </div>
 
-      <div className='text-center shadow-md mx-auto border px-5 sm:max-w-[400px] w-full rounded-md mb-5'>
+      <div
+        className='text-center shadow-md mx-auto border px-5 sm:max-w-[400px] w-full rounded-md mb-5'
+        id='team'
+      >
         <img
           src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/about/RKSABOO.webp'
           className='max-w-full mx-auto rounded-lg p-1'

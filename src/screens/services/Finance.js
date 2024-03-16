@@ -302,6 +302,7 @@ function Finance() {
         src={require('../../assets/banners/Saboo-Maruti-Suzuki-Finance-Banner.b458befc73e9d9d51ea6.webp')}
         className='max-w-full w-full lg:mt-16'
         alt='finance banner'
+        id='finance'
       />
       <div className='container mx-auto py-16 px-5'>
         <p className='text-red-500 font-semibold text-2xl'>Maruti Finance</p>

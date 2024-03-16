@@ -69,7 +69,7 @@ function WorkShop() {
           </div>
         </div>
       </div> */}
-      <div className='my-8'>
+      <div className='my-8' id='workshop'>
         <p className='font-semibold text-3xl text-center'>WorkShop</p>
         <div className='container mx-auto pt-16'>
           <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-3 md:px-0 gap-5'>

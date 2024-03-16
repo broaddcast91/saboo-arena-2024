@@ -105,7 +105,7 @@ const PaymentTest = () => {
     <>
       <Header />
       <div></div>
-      <div className='container mx-auto py-5 rounded-lg'>
+      <div className='container mx-auto py-5 rounded-lg' id='payments'>
         <div className='mt-4 md:mt-0 bg-gray-100 shadow-2xl rounded-lg p-7 '>
           <div class='gap-6 items-center py-6 px-2 mx-auto max-w-screen-xl xl:gap-14 md:grid md:grid-cols-2 sm:py-14 lg:px-4'>
             <img

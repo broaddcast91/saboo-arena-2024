@@ -18,12 +18,18 @@ function Cars() {
           <div className='text-center space-y-1'>
             <section class='h-auto bg-white'>
               <div class='max-w-4xl mx-auto py-5 px-2 sm:py-10 sm:px-6 lg:px-8 sm:text-center'>
-                <p class='mt-1 text-3xl font-extrabold text-[#293e91] sm:text-4xl sm:tracking-tight lg:text-5xl'>
+                <p
+                  class='mt-1 text-3xl font-extrabold text-[#293e91] sm:text-4xl sm:tracking-tight lg:text-5xl'
+                  x-intersect="$el.classList.add('tracking-in-expand')"
+                >
                   Discover Your Dream Car at <br />
                   <span className='text-blue-800'>Saboo</span>{' '}
                   <span className='text-red-600'>RKS</span>
                 </p>
-                <p class='max-w-9xl mt-5 mx-auto text-lg font-light text-gray-600  tracking-wide'>
+                <p
+                  class='max-w-9xl mt-5 mx-auto text-lg font-light text-gray-600  tracking-wide'
+                  x-intersect="$el.classList.add('fade-in-bottom')"
+                >
                   At Saboo RKS, we're dedicated to providing you with the finest
                   vehicles that match your style and needs. Browse our
                   collection today and experience automotive excellence like

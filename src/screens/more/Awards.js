@@ -262,7 +262,7 @@ function Awards() {
             alt='1'
             className='mx-auto'
           />
-          <div className='my-auto text-center'>
+          <div className='my-auto text-center' id='awards'>
             <p className='uppercase text-red-600 font-semibold text-2xl'>
               saboo rks awards and accomplishments
             </p>

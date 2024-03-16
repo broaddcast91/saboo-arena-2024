@@ -161,10 +161,16 @@ export const WhyChooseUs = () => {
       <div class='container my-24 mx-auto md:px-6'>
         <section class='mb-32'>
           <div class='text-center'>
-            <h2 class='text-3xl lg:text-4xl font-bold mb-6 text-[#293e91]'>
+            <h2
+              class='text-3xl lg:text-4xl font-bold mb-6 text-[#293e91]'
+              x-intersect="$el.classList.add('tracking-in-expand')"
+            >
               Why Choose Us
             </h2>
-            <p class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'>
+            <p
+              class='text-lg font-light text-gray-600 max-w-2xl mx-auto mb-12'
+              x-intersect="$el.classList.add('fade-in-bottom')"
+            >
               Your trusted source for top-notch vehicles and unparalleled
               service. Find your dream car hassle-free with us!
             </p>
@@ -179,6 +185,7 @@ export const WhyChooseUs = () => {
                   viewBox='0 0 24 24'
                   stroke='currentColor'
                   class='h-12 w-12 mx-auto text-blue-800 mb-4'
+                  x-intersect="$el.classList.add('roll-in-top')"
                 >
                   <path
                     stroke-linecap='round'
@@ -189,7 +196,10 @@ export const WhyChooseUs = () => {
                 <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Effortless Car Buying
                 </h3>
-                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
+                <p
+                  class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'
+                  x-intersect="$el.classList.add('fade-in-left')"
+                >
                   Enjoy a seamless car-buying experience with us. Simply choose
                   your dream car, and we will handle the rest.
                 </p>
@@ -204,6 +214,7 @@ export const WhyChooseUs = () => {
                   viewBox='0 0 24 24'
                   stroke='currentColor'
                   class='h-12 w-12 mx-auto text-blue-800 mb-4'
+                  x-intersect="$el.classList.add('roll-in-top')"
                 >
                   <path
                     stroke-linecap='round'
@@ -214,7 +225,10 @@ export const WhyChooseUs = () => {
                 <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Extensive Service Network
                 </h3>
-                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
+                <p
+                  class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'
+                  x-intersect="$el.classList.add('fade-in-left')"
+                >
                   Operating at around 22 touchpoints, we are one of the largest
                   automobile dealerships in the state.
                 </p>
@@ -229,6 +243,7 @@ export const WhyChooseUs = () => {
                   viewBox='0 0 24 24'
                   stroke='currentColor'
                   class='h-12 w-12 mx-auto text-blue-800 mb-4'
+                  x-intersect="$el.classList.add('roll-in-top')"
                 >
                   <path
                     stroke-linecap='round'
@@ -239,7 +254,10 @@ export const WhyChooseUs = () => {
                 <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Unwavering Reliability
                 </h3>
-                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
+                <p
+                  class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'
+                  x-intersect="$el.classList.add('fade-in-left')"
+                >
                   Backed by years of unwavering commitment and expertise, Saboo
                   RKS Motor is a brand with synonymous trust and dependability.
                 </p>
@@ -254,6 +272,7 @@ export const WhyChooseUs = () => {
                   viewBox='0 0 24 24'
                   stroke='currentColor'
                   class='h-12 w-12 mx-auto text-blue-800 mb-4'
+                  x-intersect="$el.classList.add('roll-in-top')"
                 >
                   <path
                     stroke-linecap='round'
@@ -269,7 +288,10 @@ export const WhyChooseUs = () => {
                 <h3 class='text-xl lg:text-2xl font-semibold mb-2 text-blue-800 dark:text-gray-200'>
                   Market Leader
                 </h3>
-                <p class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'>
+                <p
+                  class='text-md font-light text-gray-600 max-w-2xl mx-auto mb-12'
+                  x-intersect="$el.classList.add('fade-in-left')"
+                >
                   We are Telangana's No. 1 Maruti Suzuki Dealer, an automobile
                   dealer of choice.
                 </p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -68,6 +68,7 @@ const navigation = {
     // { name: 'SUBSCRIBE', to: '/subscribe' },
     { name: 'TERMS & CONDITIONS', to: '/maruti-car-terms-and-conditions' },
     { name: 'FAQ', to: '/faq' },
+    { name: 'SITEMAP', to: '/arenasitemap' },
     // { name: "ANNUAL REPORT '21", to: '/Annual_Return_2021' },
     // { name: "ANNUAL REPORT '22", to: '/Annual_Return_2022' },
     // { name: 'CSR POLICY', to: '/' },
@@ -83,7 +84,20 @@ const navigation = {
   ],
 };
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
 function Footer() {
+  useEffect(() => {
+    if (window.location.pathname === '/arenasitemap') {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   return (
     <>
       {/* Footer section */}
@@ -104,7 +118,9 @@ function Footer() {
                     key={index}
                   >
                     <RiArrowRightSLine className='text-gray-400' />
-                    <Link to={item.to}>{item.name}</Link>
+                    <Link to={item.to} onClick={scrollToTop}>
+                      {item.name}
+                    </Link>
                   </div>
                 ))}
               </div>
