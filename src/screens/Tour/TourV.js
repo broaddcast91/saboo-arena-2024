@@ -66,6 +66,7 @@ function TourV() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/eeco-tour-v/Eeco-banner_01.jpg'
         className='max-w-full w-full lg:mt-16'
         alt='1'
+        id='overview'
       />
 
       <div className='container mx-auto p-5 lg:px-0 flex justify-between flex-wrap items-center'>
@@ -148,9 +149,9 @@ function TourV() {
         </div>
       </div>
 
-      <CarEnquiryDown title='Tour V' carName='Tour V' />
+      <CarEnquiryDown title='Tour V' carName='Tour V' id='enquiry' />
 
-      <div className='container mx-auto'>
+      <div className='container mx-auto' id='specs'>
         <Accordian />
       </div>
     </>

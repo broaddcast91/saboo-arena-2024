@@ -66,6 +66,7 @@ function TourS() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/dzire-tour-s/dzire-banner.jpg'
         className='max-w-full w-full lg:mt-16'
         alt='1'
+        id='overview'
       />
 
       <div className='container mx-auto p-5 lg:px-0 flex justify-between flex-wrap items-center'>
@@ -155,8 +156,8 @@ function TourS() {
         </div>
       </div>
       {/* <TourSCarEnquiry /> */}
-      <CarEnquiryDown title='Tour S' carName='Tour S' />
-      <div className='container mx-auto'>
+      <CarEnquiryDown title='Tour S' carName='Tour S' id='enquiry' />
+      <div className='container mx-auto' id='specs'>
         <Accordian />
       </div>
     </>

@@ -66,6 +66,7 @@ function TourM() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/ertiga-tour-m/ertiga_M_Web-Banner.jpg'
         className='max-w-full w-full lg:mt-16'
         alt='1'
+        id='overview'
       />
 
       <div className='container mx-auto p-5 lg:px-0 flex justify-between flex-wrap items-center'>
@@ -144,12 +145,13 @@ function TourM() {
             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/ertiga-tour-m/Tour-M_car1.png'
             className='w-full md:w-auto pt-10'
             alt='1'
+            id='enquiry'
           />
         </div>
       </div>
 
       <CarEnquiryDown title='Tour M' carName='Tour M' />
-      <div className='container mx-auto'>
+      <div className='container mx-auto' id='specs'>
         <Accordian />
       </div>
     </>

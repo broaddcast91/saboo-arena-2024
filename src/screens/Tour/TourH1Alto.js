@@ -66,6 +66,7 @@ function TourH1Alto() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/alto-tour-h1/saboo-maruti-tour-h1.webp'
         className='max-w-full w-full lg:mt-16'
         alt='1'
+        id='overview'
       />
 
       <div className='container mx-auto p-5'>
@@ -133,6 +134,7 @@ function TourH1Alto() {
             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/alto-tour-h1/new-tour-h1-thumbnail.webp'
             className='w-full md:w-auto'
             alt='1'
+            id='enquiry'
           />
         </div>
       </div>
@@ -140,8 +142,12 @@ function TourH1Alto() {
       {/* insert form here */}
 
       {/* <TourH1CarEnquiry /> */}
-      <CarEnquiryDown title='Tour H1' carName='Tour H1' />
-      <div className='container mx-auto pt-6'>
+
+      <div>
+        <CarEnquiryDown title='Tour H1' carName='Tour H1' id='enquiry' />
+      </div>
+
+      <div className='container mx-auto pt-6' id='specs'>
         <Accordian />
       </div>
     </>

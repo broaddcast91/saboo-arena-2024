@@ -68,6 +68,7 @@ function TourH3Wagonr() {
         src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/TOUR/wagonr-tour-h3/TourH3_Title_1.webp'
         className='max-w-full w-full lg:mt-16'
         alt='1'
+        id='overview'
       />
 
       {/* build new module */}
@@ -146,12 +147,17 @@ function TourH3Wagonr() {
               <li>Driver Airbag</li>
             </ul>
           </div>
-          <img src={TourH3Image} className='w-full md:w-auto pt-10' alt='1' />
+          <img
+            src={TourH3Image}
+            className='w-full md:w-auto pt-10'
+            alt='1'
+            id='enquiry'
+          />
         </div>
       </div>
 
       {/* <TourH3CarEnquiry /> */}
-      <CarEnquiryDown title='Tour H3' carName='Tour H3' />
+      <CarEnquiryDown title='Tour H3' carName='Tour H3' id='specs' />
       <div className='container mx-auto'>
         <Accordian />
       </div>
