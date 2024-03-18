@@ -154,42 +154,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-alto-800-on-road-price-in-hyderabad#overview'
                 class='hover:underline '
               >
-                800 Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/all-new-maruti-alto-k10-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                k10 Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-wagon-r-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                wagonr Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-swift-car-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                swift Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/the-all-new-celerio#overview'
                 class=' hover:underline'
               >
-                cewlerio Overview
+                Overview
               </HashLink>
             </li>
           </ul>
@@ -197,42 +197,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-alto-800-on-road-price-in-hyderabad#specs'
                 class='hover:underline '
               >
-                800 Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/all-new-maruti-alto-k10-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                k10 Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-wagon-r-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                wagonr Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-swift-car-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                swift Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/the-all-new-celerio#specs'
                 class=' hover:underline'
               >
-                celerio Specifications
+                Specifications
               </HashLink>
             </li>
           </ul>
@@ -240,42 +240,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-alto-800-on-road-price-in-hyderabad#pricetable'
                 class='hover:underline '
               >
-                800 Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/all-new-maruti-alto-k10-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                k10 Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-wagon-r-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                wagonr Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-swift-car-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                swift Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/the-all-new-celerio#pricetable'
                 class=' hover:underline'
               >
-                celerio Price Table
+                Price Table
               </HashLink>
             </li>
           </ul>
@@ -283,42 +283,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-alto-800-on-road-price-in-hyderabad#enquiry'
                 class='hover:underline '
               >
-                alto 800 Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/all-new-maruti-alto-k10-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                k10 Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-wagon-r-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                wagon r Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-swift-car-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                swift Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/the-all-new-celerio#enquiry'
                 class=' hover:underline'
               >
-                celerio Enquiry
+                Enquiry
               </HashLink>
             </li>
           </ul>
@@ -329,12 +329,12 @@ const ArenaSitemap = () => {
                 to='/maruti-alto-800-cng-on-road-price-in-hyderabad'
                 class='hover:underline '
               >
-                800 CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink to='/alto-k10-cng' class=' hover:underline'>
-                k10 CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -342,12 +342,12 @@ const ArenaSitemap = () => {
                 to='/maruti-wagonr-cng-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
-                wagonr CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink to='/maruti-new-swift-cng' class=' hover:underline'>
-                swift CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -355,14 +355,15 @@ const ArenaSitemap = () => {
                 to='/maruti-celerio-cng-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
-                celerio CNG
+                CNG
               </HashLink>
             </li>
           </ul>
+          {/* cars 2nd section */}
           <ul class='mt-4 flex flex-row justify-between w-full text-2xl'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-alto-800-on-road-price-in-hyderabad'
+                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
                 class=' hover:underline '
               >
                 Dzire
@@ -370,7 +371,7 @@ const ArenaSitemap = () => {
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/all-new-maruti-alto-k10-on-road-price-in-hyderabad'
+                to='/maruti-s-presso-on-road-price-in-hyderabad'
                 class=' hover:underline '
               >
                 S-Presso
@@ -378,7 +379,7 @@ const ArenaSitemap = () => {
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-wagon-r-on-road-price-in-hyderabad'
+                to='/maruti-ertiga-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
                 Ertiga
@@ -386,14 +387,17 @@ const ArenaSitemap = () => {
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-car-on-road-price-in-hyderabad'
+                to='/maruti-new-brezza-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
                 Brezza
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
-              <HashLink to='/the-all-new-celerio' class=' hover:underline '>
+              <HashLink
+                to='/maruti-eeco-on-road-price-in-hyderabad'
+                class=' hover:underline '
+              >
                 Eeco
               </HashLink>
             </li>
@@ -402,42 +406,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-swift-dzire-on-road-price-in-hyderabad#overview'
                 class='hover:underline '
               >
-                dzire Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/maruti-s-presso-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                spresso Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-ertiga-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                ertiga Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-new-brezza-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                brezza Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/maruti-eeco-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                eeco Overview
+                Overview
               </HashLink>
             </li>
           </ul>
@@ -445,42 +449,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-swift-dzire-on-road-price-in-hyderabad#specs'
                 class='hover:underline '
               >
-                dzire Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/maruti-s-presso-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                spresso Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-ertiga-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                ertiga Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-new-brezza-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                brezza Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/maruti-eeco-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                eeco Specifications
+                Specifications
               </HashLink>
             </li>
           </ul>
@@ -488,42 +492,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-swift-dzire-on-road-price-in-hyderabad#pricetable'
                 class='hover:underline '
               >
-                dzire Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/maruti-s-presso-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                spresso Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-ertiga-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                ertiga Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-new-brezza-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                brezza Price Table
+                Price Table
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/maruti-eeco-on-road-price-in-hyderabad#pricetable'
                 class=' hover:underline'
               >
-                eeco Price Table
+                Price Table
               </HashLink>
             </li>
           </ul>
@@ -531,42 +535,42 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-swift-dzire-on-road-price-in-hyderabad'
+                to='/maruti-swift-dzire-on-road-price-in-hyderabad#enquiry'
                 class='hover:underline '
               >
-                dzire Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-s-presso-on-road-price-in-hyderabad'
+                to='/maruti-s-presso-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                spresso Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-ertiga-on-road-price-in-hyderabad'
+                to='/maruti-ertiga-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                ertiga Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <HashLink
-                to='/maruti-new-brezza-on-road-price-in-hyderabad'
+                to='/maruti-new-brezza-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                brezza Enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
               <Link
-                to='/maruti-eeco-on-road-price-in-hyderabad'
+                to='/maruti-eeco-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                eeco Enquiry
+                Enquiry
               </Link>
             </li>
           </ul>
@@ -574,7 +578,7 @@ const ArenaSitemap = () => {
           <ul class='mt-4 flex flex-row justify-between w-full font-light'>
             <li class='w-full md:w-1/4'>
               <HashLink to='/maruti-new-swift-cng' class='hover:underline '>
-                dzire CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -582,7 +586,7 @@ const ArenaSitemap = () => {
                 to='/maruti-s-presso-cng-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
-                s presso CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -590,7 +594,7 @@ const ArenaSitemap = () => {
                 to='/maruti-ertiga-cng-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
-                ertiga CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -598,7 +602,7 @@ const ArenaSitemap = () => {
                 to='/maruti-brezza-cng-on-road-price'
                 class=' hover:underline'
               >
-                brezza CNG
+                CNG
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -606,7 +610,7 @@ const ArenaSitemap = () => {
                 to='/maruti-eeco-cng-on-road-price-in-hyderabad'
                 class=' hover:underline'
               >
-                eeco CNG
+                CNG
               </HashLink>
             </li>
           </ul>
@@ -660,7 +664,7 @@ const ArenaSitemap = () => {
                 to='/maruti-alto-tour-h1-on-road-price-in-hyderabad#overview'
                 class='hover:underline '
               >
-                h1 Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -668,7 +672,7 @@ const ArenaSitemap = () => {
                 to='/maruti-dzire-tour-s-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                s Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -676,7 +680,7 @@ const ArenaSitemap = () => {
                 to='/maruti-wagnor-tour-h3-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                h3 Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -684,7 +688,7 @@ const ArenaSitemap = () => {
                 to='/maruti-ertiga-tour-m-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                m Overview
+                Overview
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -692,7 +696,7 @@ const ArenaSitemap = () => {
                 to='/maruti-eeco-tour-v-on-road-price-in-hyderabad#overview'
                 class=' hover:underline'
               >
-                v Overview
+                Overview
               </HashLink>
             </li>
           </ul>
@@ -703,7 +707,7 @@ const ArenaSitemap = () => {
                 to='/maruti-alto-tour-h1-on-road-price-in-hyderabad#enquiry'
                 class='hover:underline '
               >
-                h1 enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -711,7 +715,7 @@ const ArenaSitemap = () => {
                 to='/maruti-dzire-tour-s-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                s enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -719,7 +723,7 @@ const ArenaSitemap = () => {
                 to='/maruti-wagnor-tour-h3-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                h3 enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -727,7 +731,7 @@ const ArenaSitemap = () => {
                 to='/maruti-ertiga-tour-m-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                m enquiry
+                Enquiry
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -735,7 +739,7 @@ const ArenaSitemap = () => {
                 to='/maruti-eeco-tour-v-on-road-price-in-hyderabad#enquiry'
                 class=' hover:underline'
               >
-                v enquiry
+                Enquiry
               </HashLink>
             </li>
           </ul>
@@ -746,7 +750,7 @@ const ArenaSitemap = () => {
                 to='/maruti-alto-tour-h1-on-road-price-in-hyderabad#specs'
                 class='hover:underline '
               >
-                h1 specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -754,7 +758,7 @@ const ArenaSitemap = () => {
                 to='/maruti-dzire-tour-s-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                s specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -762,7 +766,7 @@ const ArenaSitemap = () => {
                 to='/maruti-wagnor-tour-h3-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                h3 Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -770,7 +774,7 @@ const ArenaSitemap = () => {
                 to='/maruti-ertiga-tour-m-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                m Specifications
+                Specifications
               </HashLink>
             </li>
             <li class='w-full md:w-1/4'>
@@ -778,7 +782,7 @@ const ArenaSitemap = () => {
                 to='/maruti-eeco-tour-v-on-road-price-in-hyderabad#specs'
                 class=' hover:underline'
               >
-                v Specifications
+                Specifications
               </HashLink>
             </li>
           </ul>

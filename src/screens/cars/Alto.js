@@ -75,6 +75,7 @@ export function Alto() {
         src={AltoBanner}
         className='max-w-full w-full lg:mt-16'
         alt='Maruti Suzuki Alto 800 Price in Hyderabad'
+        id='overview'
       />
       <CarsSlider scrollToCarEnquiry={scrollToCarEnquiry} />
 
@@ -98,7 +99,7 @@ export function Alto() {
         </div>
       </div>
 
-      <div>
+      <div id='specs'>
         <img
           src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/maruti-alto-800/Alto_Brand_Brochure-new.webp'
           alt='brochure'
@@ -317,7 +318,7 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
 const Colors = () => {
   const [current, setCurrent] = useState(1);
   return (
-    <div className='border rounded-3xl mt-8 bg-gray-100'>
+    <div className='border rounded-3xl mt-8 bg-gray-100' id='enquiry'>
       <div className='container mx-auto mt-12 py-12 flex flex-col items-center'>
         {altoColors.map((item) => (
           <img
@@ -360,7 +361,10 @@ const Colors = () => {
 
 const Table = () => {
   return (
-    <div className='overflow-scroll md:overflow-hidden rounded-2xl shadow-sm'>
+    <div
+      className='overflow-scroll md:overflow-hidden rounded-2xl shadow-sm'
+      id='pricetable'
+    >
       <table className='min-w-max w-full table-auto bg-white border-collapse border rounded-lg shadow-md'>
         <thead className='bg-blue-800 text-white'>
           <tr>
