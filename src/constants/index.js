@@ -1,8 +1,8 @@
 export const sliders = [
-  // {
-  //   img: require('../assets/banners/Website_Valentines_Day_Saboo_RKS_Motor_February_Offers.webp'),
-  //   alt: 'Buy New Maruti Suzuki Car in 2024 with Febraury offers',
-  // },
+  {
+    img: require('../assets/banners/Website_Price_Hike_Saboo_RKS_Motor_March_Holi_Offers.webp'),
+    alt: 'Website Price Hike Saboo RKS Motor March Holi Offers 2024',
+  },
   // {
   //   img: require('../assets/banners/Maruti-Suzuki-Arena-New-Year-banner-2024.webp'),
   //   alt: 'Buy New Maruti Suzuki Car in 2024 with great discount offers',
@@ -87,17 +87,17 @@ export const sliders = [
 ];
 
 export const mobileSliders = [
-  // {
-  //   img: require('../assets/banners/Website_Mobile_Valentines_Day_Saboo_RKS_Motor_February_Offers.webp'),
-  //   alt: 'Buy New Maruti Suzuki Car in 2024 with Febraury offers',
-  // },
+  {
+    img: require('../assets/banners/Website_Mobile_Price_Hike_Saboo_RKS_Motor_March_Holi_Offers.webp'),
+    alt: 'Website Price Hike Saboo RKS Motor March Holi Offers 2024',
+  },
   // {
   //   img: require('../assets/banners/Maruti-Suzuki-Arena-New-Year-Mobile-banner-2024.webp'),
   //   alt: 'Buy New Maruti Suzuki Car in 2024 with great discount offers',
   // },
   {
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Mobile_Womens_Day_Saboo_RKS_Motor_March_Offers.webp',
-    alt: 'Maruti Suzuki Navratri dussehra Saboo RKS Motor October Offers',
+    alt: 'Maruti Suzuki somajiguda driving school offers Offers',
   },
   // {
   //   img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/banners/Website_Mobile_Gandhi_Jayanti_Saboo_RKS_Motor_October_Offers.webp',
@@ -166,10 +166,10 @@ export const mobileSliders = [
 ];
 
 export const offersSliders = [
-  // {
-  //   img: require('../assets/banners/Website_Valentines_Day_Saboo_RKS_Motor_February_Offers.webp'),
-  //   alt: 'Buy New Maruti Suzuki Car in 2024 with Febraury offers',
-  // },
+  {
+    img: require('../assets/banners/Website_Price_Hike_Saboo_RKS_Motor_March_Holi_Offers.webp'),
+    alt: 'Website Price Hike Saboo RKS Motor March Holi Offers 2024',
+  },
   // {
   //   img: require('../assets/banners/Maruti-Suzuki-Arena-New-Year-banner-2024.webp'),
   //   alt: 'Buy New Maruti Suzuki Car in 2024 with great discount offers',
