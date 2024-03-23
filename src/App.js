@@ -90,6 +90,7 @@ import Careers from './screens/Careers/Careers';
 import Header2 from './components/header/Header2';
 import NewBlog from './screens/more/NewBlog';
 import ArenaSitemap from './screens/more/ArenaSitemap';
+import RewardPoints from './screens/more/RewardPoints';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -360,6 +361,7 @@ function App() {
           <Route path='/faq' element={<Faq />} />
           <Route path='/pricelist' element={<PriceList />} />
           <Route path='/arenasitemap' element={<ArenaSitemap />} />
+          <Route path='/marutirewards' element={<RewardPoints />} />
           {/*====== Not Found ======*/}
           <Route path='*' element={<NotFound />} />
         </Routes>

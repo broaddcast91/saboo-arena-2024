@@ -703,6 +703,29 @@ export const showrooms = [
   },
 ];
 
+export const RewardSliderImages = [
+  {
+    img: require('../assets/banners/RewardSlider/1.png'),
+    alt: 'Reward Points slider 1',
+  },
+  {
+    img: require('../assets/banners/RewardSlider/2.png'),
+    alt: 'Reward Points slider 2',
+  },
+  {
+    img: require('../assets/banners/RewardSlider/3.png'),
+    alt: 'Reward Points slider 3',
+  },
+  {
+    img: require('../assets/banners/RewardSlider/4.png'),
+    alt: 'Reward Points slider 4',
+  },
+  {
+    img: require('../assets/banners/RewardSlider/8.png'),
+    alt: 'Reward Points slider 5',
+  },
+];
+
 <iframe
   title='Embedded Video'
   src=''
