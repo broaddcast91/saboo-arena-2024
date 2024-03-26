@@ -86,6 +86,10 @@ export function CardDefault({ cardData }) {
   const [loading, setLoading] = useState(false);
   // const [submitted, setSubmitted] = useState(false);
   // const [outlet, setOutlet] = useState('');
+  // adding date
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
   const checkFormValidity = () => {
     return phone.length === 10 && !loading;
   };
@@ -119,6 +123,9 @@ export function CardDefault({ cardData }) {
           Phone: phone,
           // LEADCF6: model,
           LEADCF23: product,
+          // adding date
+          LEADCF83: result,
+          Company: 'BroaddCast',
         }),
       });
       if (response.ok) {

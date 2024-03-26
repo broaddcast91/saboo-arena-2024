@@ -18,6 +18,11 @@ function Corporate() {
   const [outlet, setOutlet] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
+  // adding date
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+
   //testing second event
 
   const checkFormValidity = () => {
@@ -232,6 +237,30 @@ function Corporate() {
                     className='border h-10 outline-none px-3 rounded-md w-full focus:ring-blue-500 focus:border-blue-500'
                     required
                   />
+                </div>
+                <div className='hidden'>
+                  <label className='block text-sm font-medium text-gray-700'>
+                    Phone <span className='text-red-600'>*</span>
+                  </label>
+                  <input
+                    className='border h-10 outline-none px-3 rounded-md w-full focus:ring-red-500 focus:border-red-500'
+                    type='text'
+                    required
+                    id='LEADCF83'
+                    name='LEADCF83'
+                    value={result}
+                  />
+                  {phone.length > 0 && phone.length < 10 ? (
+                    <small className='text-red-500'>
+                      Phone number must be 10 digits
+                    </small>
+                  ) : !pattern.test(phone) && phone.length === 10 ? (
+                    <small className='text-red-500'>
+                      Phone number is invalid
+                    </small>
+                  ) : (
+                    ''
+                  )}
                 </div>
                 <div>
                   <label className='block text-sm font-medium text-gray-700'>

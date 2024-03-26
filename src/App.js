@@ -381,6 +381,10 @@ function LeadPopup({ setOpen }) {
 
   const [loading, setLoading] = useState(false);
 
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+
   // const [submitted, setSubmitted] = useState(false);
 
   const checkFormValidity = () => {
@@ -421,6 +425,9 @@ function LeadPopup({ setOpen }) {
           Phone: phone,
           LEADCF6: model,
           LEADCF23: outlet,
+          // adding date
+          LEADCF83: result,
+          Company: 'BroaddCast',
         }),
       });
       if (response.ok) {

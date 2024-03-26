@@ -88,6 +88,11 @@ const PreferenceForm = () => {
   const [loading, setLoading] = useState(false);
   const [outlet, setOutlet] = useState('');
 
+  // adding date
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+
   const checkFormValidity = () => {
     return (
       name.trim() !== '' && phone.length === 10 && outlet !== '' && !loading
@@ -123,6 +128,9 @@ const PreferenceForm = () => {
           Phone: phone,
           // LEADCF6: model,
           LEADCF23: outlet,
+          // adding date
+          LEADCF83: result,
+          Company: 'BroaddCast',
         }),
       });
       if (response.ok) {

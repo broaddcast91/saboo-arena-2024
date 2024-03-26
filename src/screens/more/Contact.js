@@ -28,6 +28,12 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   // const [submitted, setSubmitted] = useState(false);
   // const [captchaValue, setCaptchaValue] = useState(null);
+
+  // adding date
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+
   const checkFormValidity = () => {
     return (
       name.trim() !== '' &&
@@ -73,6 +79,9 @@ function Contact() {
           Phone: phone,
           LEADCF6: model,
           LEADCF23: outlet,
+          // adding date
+          LEADCF83: result,
+          Company: 'BroaddCast',
         }),
       });
       if (response.ok) {
@@ -84,8 +93,6 @@ function Contact() {
     } catch (error) {
       // Handle network or other errors
     }
-
-  
 
     try {
       await axios
