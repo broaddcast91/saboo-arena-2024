@@ -85,31 +85,7 @@ function Contact() {
       // Handle network or other errors
     }
 
-    // try {
-    //   await axios
-    //     .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
-    //       name: name,
-    //       phone: phone,
-    //       subject: subject,
-    //       email: email,
-    //       model: model,
-    //       outlet: outlet,
-    //       message: message,
-    //     })
-    //     .then((res) => {
-    //       toast.success('Enquiry sent successfully');
-    //       // setSubmitted(true);
-    //     })
-    //     .catch((err) => {
-    //       setLoading(false);
-    //       toast.error('Something went wrong!');
-    //       console.log(err);
-    //     });
-    //   // console.log('Captcha value:', captchaValue);
-    // } catch (error) {
-    //   // toast.error("Something went wrong!");
-    //   setLoading(false);
-    // }
+  
 
     try {
       await axios

@@ -376,12 +376,201 @@ const TierBenefits = () => {
   );
 };
 
-const EarnPoints = () => {
-  return <p>Learn how to Earn Points here.</p>;
+const EarnPoints = ({ tabNames }) => {
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [isTabClicked, setIsTabClicked] = useState(false);
+  const images = [
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-1.webp',
+      name: 'through vehicle service',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-1.svg',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-1.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-2.webp',
+      name: 'through extended warranty',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-2.svg',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-2.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-3.webp',
+      name: 'through car accessories',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-3.svg',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-3.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-4.webp',
+      name: 'through MCP',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-4.svg',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-4.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-5.webp',
+      name: 'through badges',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-5.svg',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-5.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-6.webp',
+      name: 'through Insurance',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-6.svg',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-6.svg',
+    },
+    // Add more image URLs and names as needed
+  ];
+
+  const handleTabClick = (index) => {
+    setSelectedTab(index);
+    setIsTabClicked(true); // Set tab clicked state to true when any tab is clicked
+  };
+
+  useEffect(() => {
+    // Ensure that isTabClicked is false on component mount to display transparent icons by default
+    setIsTabClicked(false);
+  }, []);
+
+  return (
+    <div className='flex flex-col'>
+      <div className='flex-grow'>
+        <img
+          src={images[selectedTab].url}
+          alt={images[selectedTab].name}
+          className='w-full h-5/6 rounded-2xl'
+        />
+      </div>
+      <div className='p-4'>
+        <div className='flex justify-center space-x-2'>
+          {images.map((image, index) => (
+            <button
+              key={index}
+              className={`flex flex-col items-center uppercase py-2 px-4 text-gray-600 text-xs shadow border ${
+                selectedTab === index
+                  ? 'bg-blue-900 text-white'
+                  : 'border bg-gray-200/50 text-gray-700 hover:font-bold'
+              } rounded-md`}
+              onClick={() => handleTabClick(index)}
+              style={{ width: '200px', height: '100px' }}
+            >
+              <img
+                src={
+                  // Render colored icon if active tab or if any tab is clicked, otherwise render transparent icon
+                  selectedTab === index || isTabClicked
+                    ? image.icon
+                    : image.iconTransparent
+                }
+                alt={`Icon ${index + 1}`}
+                className='w-14 h-14 mb-1'
+              />
+              {image.name}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
-const RedeemPoints = () => {
-  return <p>Redeem your points in this tab.</p>;
+const RedeemPoints = ({ tabNames }) => {
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [isTabClicked, setIsTabClicked] = useState(false);
+  const images = [
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-1.webp',
+      name: 'on vehicle service',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-1.svg',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-1.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-2.webp',
+      name: 'on a new car',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-2.svg',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-2.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-3.webp',
+      name: 'on extended warranty',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-3.svg',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-3.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-4.webp',
+      name: 'on MCP',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-4.svg',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-4.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-5.webp',
+      name: 'on car accessories',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-5.svg',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-5.svg',
+    },
+    {
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-6.webp',
+      name: 'on Insurance',
+      iconTransparent:
+        'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-6.svg',
+      icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-6.svg',
+    },
+    // Add more image URLs and names as needed
+  ];
+
+  const handleTabClick = (index) => {
+    setSelectedTab(index);
+    setIsTabClicked(true); // Set tab clicked state to true when any tab is clicked
+  };
+
+  return (
+    <div className='flex flex-col'>
+      <div className='flex-grow'>
+        <img
+          src={images[selectedTab].url}
+          alt={images[selectedTab].name}
+          className='w-full h-5/6 rounded-2xl'
+        />
+      </div>
+      <div className='p-4'>
+        <div className='flex justify-center space-x-2'>
+          {images.map((image, index) => (
+            <button
+              key={index}
+              className={`flex flex-col items-center uppercase py-2 px-4 text-gray-600 text-xs shadow border ${
+                selectedTab === index
+                  ? 'bg-blue-900 text-white'
+                  : 'border bg-gray-200/50 text-gray-700 hover:font-bold'
+              } rounded-md`}
+              onClick={() => handleTabClick(index)}
+              style={{ width: '200px', height: '100px' }}
+            >
+              <img
+                src={
+                  selectedTab === index
+                    ? image.icon
+                    : isTabClicked
+                    ? image.iconTransparent
+                    : image.icon
+                } // Render colored icon if active tab or if any tab is clicked, otherwise render transparent icon
+                alt={`Icon ${index + 1}`}
+                className='w-14 h-14 mb-1'
+              />
+
+              {image.name}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 const RewardTabs = () => {

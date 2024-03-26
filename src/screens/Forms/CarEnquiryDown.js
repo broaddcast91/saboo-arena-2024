@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
 import { toast } from 'react-toastify';
-
+import { useNavigate } from 'react-router-dom';
 import { CgSpinner } from 'react-icons/cg';
 import axios from 'axios';
 
@@ -16,6 +16,9 @@ export const CarEnquiryDown = ({ title, carName }) => {
   const [loading, setLoading] = useState(false);
   const [outlet, setOutlet] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
 
   const checkFormValidity = () => {
     return (
@@ -25,6 +28,8 @@ export const CarEnquiryDown = ({ title, carName }) => {
       !loading
     );
   };
+
+  const navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -33,26 +38,36 @@ export const CarEnquiryDown = ({ title, carName }) => {
       return;
     }
     setLoading(true);
+
     try {
-      await axios
-        .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
-          name: name,
-          phone: phone,
-          // email: email,
-          model: model,
-          outlet: outlet,
-        })
-        .then((res) => {
-          toast.success('Enquiry sent successfully');
-        })
-        .catch((err) => {
-          setLoading(false);
-          toast.error('Something went wrong!');
-          console.log(err);
-        });
+      const response = await fetch('https://crm.zoho.in/crm/WebToLeadForm', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          xnQsjsdp:
+            'c74cc4baa2079f2637d12188693a8bb7a822a54f015337983612fcbc54e9f529',
+          zc_gad: '',
+          xmIwtLD:
+            'adcef2507910e0e3ba3fffde446eb242f3dba817a00c872b6a7d471bc1ce61d0bd840c68a483b37a9012f6016a3ceeb4',
+          actionType: 'TGVhZHM=',
+          returnURL: 'https://www.saboomaruti.in/',
+          'Last Name': name,
+          // Email: phone + '@gmail.com',
+          Phone: phone,
+          LEADCF6: model,
+          LEADCF23: outlet,
+        }),
+      });
+      if (response.ok) {
+        navigate('/thank-you-for-contact-us');
+        // Handle success, e.g., show a success message
+      } else {
+        // Handle error, e.g., show an error message
+      }
     } catch (error) {
-      // toast.error("Something went wrong!");
-      setLoading(false);
+      // Handle network or other errors
     }
 
     try {
@@ -144,6 +159,16 @@ export const CarEnquiryDown = ({ title, carName }) => {
             required
           />
         </div>
+        {/* <div>
+          <input
+            className='border hidden h-10 outline-none px-3 rounded-full w-full focus:ring-blue-500 focus:border-blue-500 mb-4'
+            placeholder='Name'
+            id='LEADCF83'
+            name='LEADCF83'
+            value={result}
+            disabled
+          />
+        </div> */}
         <div>
           <input
             className='border h-10 outline-none px-3 rounded-full w-full focus:ring-blue-500 focus:border-blue-500 mb-4'
