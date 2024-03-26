@@ -131,6 +131,9 @@ const BookMarutiService = () => {
   const [loading, setLoading] = useState(false);
   const [outlet, setOutlet] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  var result = '';
+  var d = new Date();
+  result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
 
   const checkFormValidity = () => {
     return phone.length === 10 && !loading;
@@ -440,6 +443,30 @@ const BookMarutiService = () => {
                         e.target.value.replace(/ /g, '')
                     )
                   }
+                />
+                {phone.length > 0 && phone.length < 10 ? (
+                  <small className='text-red-500'>
+                    Phone number must be 10 digits
+                  </small>
+                ) : !pattern.test(phone) && phone.length === 10 ? (
+                  <small className='text-red-500'>
+                    Phone number is invalid
+                  </small>
+                ) : (
+                  ''
+                )}
+              </div>
+              <div className='hidden'>
+                <label className='block text-sm font-medium text-gray-700'>
+                  Phone <span className='text-red-600'>*</span>
+                </label>
+                <input
+                  className='border h-10 outline-none px-3 rounded-md w-full focus:ring-red-500 focus:border-red-500'
+                  type='text'
+                  required
+                  id='LEADCF83'
+                  name='LEADCF83'
+                  value={result}
                 />
                 {phone.length > 0 && phone.length < 10 ? (
                   <small className='text-red-500'>

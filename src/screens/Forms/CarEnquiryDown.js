@@ -16,6 +16,7 @@ export const CarEnquiryDown = ({ title, carName }) => {
   const [loading, setLoading] = useState(false);
   const [outlet, setOutlet] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  // adding date
   var result = '';
   var d = new Date();
   result += d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
@@ -58,6 +59,8 @@ export const CarEnquiryDown = ({ title, carName }) => {
           Phone: phone,
           LEADCF6: model,
           LEADCF23: outlet,
+          LEADCF83: result,
+          Company: 'BroaddCast',
         }),
       });
       if (response.ok) {
