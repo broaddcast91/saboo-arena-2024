@@ -726,6 +726,18 @@ export const RewardSliderImages = [
   },
 ];
 
+export const RewardMobileSliderImages = [
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/mobile/mobile-images/for-slider/1-cropped.webp',
+    alt: 'reward mobile slide 1',
+  },
+
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/mobile/mobile-images/for-slider/5-cropped.webp',
+    alt: 'reward mobile slide 2',
+  },
+];
+
 <iframe
   title='Embedded Video'
   src=''

@@ -18,27 +18,27 @@ const NewCarEnquiry = ({ title, carName }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-    try {
-      await axios
-        .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
-          name: name,
-          phone: phone,
-          // email: email,
-          model: model,
-          outlet: outlet,
-        })
-        .then((res) => {
-          toast.success('Enquiry sent successfully');
-        })
-        .catch((err) => {
-          setLoading(false);
-          toast.error('Something went wrong!');
-          console.log(err);
-        });
-    } catch (error) {
-      // toast.error("Something went wrong!");
-      setLoading(false);
-    }
+    // try {
+    //   await axios
+    //     .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
+    //       name: name,
+    //       phone: phone,
+    //       // email: email,
+    //       model: model,
+    //       outlet: outlet,
+    //     })
+    //     .then((res) => {
+    //       toast.success('Enquiry sent successfully');
+    //     })
+    //     .catch((err) => {
+    //       setLoading(false);
+    //       toast.error('Something went wrong!');
+    //       console.log(err);
+    //     });
+    // } catch (error) {
+    //   // toast.error("Something went wrong!");
+    //   setLoading(false);
+    // }
 
     try {
       await axios

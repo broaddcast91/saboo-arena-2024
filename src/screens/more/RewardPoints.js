@@ -1,18 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from '../../components/header/Header';
 import RewardSlider from '../../components/home/RewardSlider/RewardSlider';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { Autoplay } from 'swiper';
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { toast } from 'react-toastify';
-
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
-
+import { VehicleCarEnquiry } from '../Forms/VehicleCarEnquiry';
 import Logo1 from '../../assets/icons/reward-points/webp/1.webp';
 import Logo2 from '../../assets/icons/reward-points/webp/2.webp';
 import Logo3 from '../../assets/icons/reward-points/webp/3.webp';
@@ -52,6 +48,8 @@ const RewardPoints = () => {
     <>
       <Header />
       <RewardSlider />
+      {/* Render MobileRewardSlider if window width is less than or equal to 425, otherwise render RewardSlider */}
+      {/* {windowWidth <= 425 ? <MobileRewardSlider /> : <RewardSlider />} */}
       <MainLayout />
     </>
   );
@@ -65,9 +63,9 @@ const MainLayout = () => {
     setIsOpen(false);
   }
 
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
   const pattern = /^(?![6-9]{10}$)(?!.*(\d)(?:-?\1){9})[6-9]\d{9}$/;
   if (phone !== '' && phone.length === 10) {
@@ -80,19 +78,26 @@ const MainLayout = () => {
 
   return (
     <>
-      <div className='text-center w-auto bg-blue-800 text-white p-20 '>
-        <div className='text-5xl uppercase p-10'>
-          owning a car, now more <br></br>
-          <span className='font-semibold'>streamlined</span> than ever
+      <div className='text-center bg-blue-800 text-white p-8 md:p-20'>
+        <div
+          className='text-2xl md:text-5xl uppercase font-extralight py-4 md:py-10'
+          x-intersect="$el.classList.add('tracking-in-expand')"
+        >
+          Discover the benefits of <br />{' '}
+          <span className='font-bold'>Maruti Suzuki</span> Rewards
+        </div>
+        <div className='font-extralight'>
+          Earn points for every action and transaction, and redeem them for
+          savings on services, accessories, warranties, and exclusive offers.
         </div>
         {/* buttons */}
-        <div className='flex justify-center mt-10'>
-          <button
-            className='mr-4 bg-white text-blue-800 rounded-full px-8 py-5'
+        <div className='flex flex-col md:flex-row justify-center items-center mt-4 md:mt-10'>
+          {/* <button
+            className='mr-4 bg-white text-blue-800 rounded-full px-6 py-3 md:px-8 md:py-5'
             onClick={openModal}
           >
             Enroll Now
-          </button>
+          </button> */}
           <Transition show={isOpen} as={Fragment}>
             <Dialog as='div' className='relative z-10' onClose={closeModal}>
               <Transition.Child
@@ -183,7 +188,7 @@ const MainLayout = () => {
           </Transition>
           <a
             href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/brochures/msrebrochure.pdf'
-            class='relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-white border border-white rounded-full hover:text-blue-800 group hover:bg-white'
+            class='relative inline-flex items-center px-10 py-4 overflow-hidden text-lg font-medium text-white border border-white rounded-full hover:text-blue-800 group hover:bg-white mt-4 md:mt-0'
           >
             <span class='absolute left-0 block w-full h-0 transition-all bg-white opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease'></span>
             <span class='absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease'>
@@ -206,8 +211,11 @@ const MainLayout = () => {
           </a>
         </div>
 
-        <div className='border-white mt-10 bg-white rounded-3xl text-black'>
-          <RewardTabs />
+        <div className='border-white mt-4 md:mt-10 bg-white rounded-3xl text-black md:w-4/4 md:mx-auto'>
+          <div className='p-4 md:p-6'>
+            <RewardTabs />
+          </div>
+          <VehicleCarEnquiry />
         </div>
       </div>
     </>
@@ -218,130 +226,123 @@ const MainLayout = () => {
 const ProgramOverview = () => {
   return (
     <>
-      <div className='flex justify-center items-center h-80  rounded '>
-        {/* section a */}
-        <div className='flex flex-col justify-between h-full w-full mr-4  rounded'>
-          <div className='h-1/3 '>
-            <div className='h-full flex'>
-              <div className='w-1/4  flex justify-center items-center'>
-                <img src={Logo1} alt='' className='w-16 h-16' />
-              </div>
-              <div className='w-3/4  '>
-                <div className='h-1/2 '>
-                  <div className='h-full  flex justify-start items-center text-blue-800 font-semibold text-2xl'>
-                    Earn Points on Transaction
-                  </div>
-                </div>
-                <div className='h-1/2 '>
-                  <div className='h-full flex justify-center items-center text-xs text-left text-gray-500'>
-                    Win points on every transaction you make (max 5 points on
-                    every 100 rupees spent) where 1 point = 1 rupee.
-                  </div>
-                </div>
-              </div>
+      <div className='flex flex-col items-center'>
+        {/* Section A */}
+        <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 p-2'>
+          <div className='flex flex-col justify-between p-4 bg-white rounded-lg shadow-md'>
+            <img
+              src={Logo1}
+              alt=''
+              className='w-16 h-16 mb-4 mx-auto'
+              x-intersect="$el.classList.add('fade-in-left')"
+            />
+            <div
+              className='text-blue-800 font-semibold text-xl text-center'
+              x-intersect="$el.classList.add('fade-in-left')"
+            >
+              Earn Points on Transaction
+            </div>
+            <div className='text-sm text-gray-500 text-left'>
+              Win points on every transaction you make (max 5 points on every
+              100 rupees spent) where 1 point = 1 rupee.
             </div>
           </div>
-          <div className='h-1/3 '>
-            <div className='h-full flex'>
-              <div className='w-1/4  flex justify-center items-center'>
-                <img src={Logo2} alt='' className='w-16 h-16' />
-              </div>
-              <div className='w-3/4  '>
-                <div className='h-1/2 '>
-                  <div className='h-full  flex justify-start items-center text-blue-800 font-semibold text-2xl'>
-                    Win Badges on interactions
-                  </div>
-                </div>
-                <div className='h-1/2 '>
-                  <div className='h-full flex justify-start items-center text-xs text-left text-gray-500'>
-                    Perform select actions to win badges that also carry points.
-                  </div>
-                </div>
-              </div>
+          <div className='flex flex-col justify-between p-4 bg-white rounded-lg shadow-md'>
+            <img
+              src={Logo2}
+              alt=''
+              className='w-16 h-16 mb-4 mx-auto'
+              x-intersect="$el.classList.add('fade-in-left')"
+            />
+            <div
+              className='text-blue-800 font-semibold text-xl text-center'
+              x-intersect="$el.classList.add('fade-in-left')"
+            >
+              Win Badges on interactions
             </div>
-          </div>
-          <div className='h-1/3 '>
-            <div className='h-full flex'>
-              <div className='w-1/4   flex justify-center items-center'>
-                <img src={Logo3} alt='' className='w-16 h-16' />
-              </div>
-              <div className='w-3/4  '>
-                <div className='h-1/2 '>
-                  <div className='h-full  flex justify-start items-center text-blue-800 font-semibold text-2xl'>
-                    Card-less Program
-                  </div>
-                </div>
-                <div className='h-1/2 '>
-                  <div className='h-full flex justify-center items-center text-xs text-left text-gray-500'>
-                    Your membership is directly linked to your mobile number,
-                    which removes the hassle of carrying cards.
-                  </div>
-                </div>
-              </div>
+            <div className='text-sm text-gray-500 text-left'>
+              Perform select actions to win badges that also carry points.
             </div>
           </div>
         </div>
-        {/* section b */}
-        <div className='flex flex-col justify-between h-full w-full mr-4  rounded'>
-          <div className='h-1/3 '>
-            <div className='h-full flex'>
-              <div className='w-1/4   flex justify-center items-center'>
-                <img src={Logo4} alt='' className='w-16 h-16' />
-              </div>
-              <div className='w-3/4  '>
-                <div className='h-1/2 '>
-                  <div className='h-full  flex justify-start items-center text-blue-800 font-semibold text-2xl'>
-                    Multiple Tiers
-                  </div>
-                </div>
-                <div className='h-1/2 '>
-                  <div className='h-full flex justify-center items-center text-xs text-left text-gray-500'>
-                    Climb up to higher tiers and get exciting benefits like
-                    exclusive invites, more reward points on spends (max. 5
-                    points on every 100 rupees spent) and a lot more.
-                  </div>
-                </div>
-              </div>
+
+        {/* Section B */}
+        <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 p-2'>
+          <div className='flex flex-col justify-between p-4 bg-white rounded-lg shadow-md'>
+            <img
+              src={Logo3}
+              alt=''
+              className='w-16 h-16 mb-4 mx-auto'
+              x-intersect="$el.classList.add('fade-in-left')"
+            />
+            <div
+              className='text-blue-800 font-semibold text-xl text-center'
+              x-intersect="$el.classList.add('fade-in-left')"
+            >
+              Card-less Program
+            </div>
+            <div className='text-sm text-gray-500 text-left'>
+              Your membership is directly linked to your mobile number, which
+              removes the hassle of carrying cards.
             </div>
           </div>
-          <div className='h-1/3 '>
-            <div className='h-full flex'>
-              <div className='w-1/4   flex justify-center items-center'>
-                <img src={Logo5} alt='' className='w-16 h-16' />
-              </div>
-              <div className='w-3/4  '>
-                <div className='h-1/2 '>
-                  <div className='h-full  flex justify-start items-center text-blue-800 font-semibold text-2xl'>
-                    Attend Exclusive Events
-                  </div>
-                </div>
-                <div className='h-1/2 '>
-                  <div className='h-full flex justify-center items-center text-xs text-left text-gray-500'>
-                    Get opportunities for passes and exclusive invites to attend
-                    the most exclusive and exciting events
-                  </div>
-                </div>
-              </div>
+          <div className='flex flex-col justify-between p-4 bg-white rounded-lg shadow-md'>
+            <img
+              src={Logo4}
+              alt=''
+              className='w-16 h-16 mb-4 mx-auto'
+              x-intersect="$el.classList.add('fade-in-left')"
+            />
+            <div
+              className='text-blue-800 font-semibold text-xl text-center'
+              x-intersect="$el.classList.add('fade-in-left')"
+            >
+              Multiple Tiers
+            </div>
+            <div className='text-sm text-gray-500 text-left'>
+              Climb up to higher tiers and get exciting benefits like exclusive
+              invites, more reward points on spends (max. 5 points on every 100
+              rupees spent) and a lot more.
             </div>
           </div>
-          <div className='h-1/3 '>
-            <div className='h-full flex'>
-              <div className='w-1/4   flex justify-center items-center'>
-                <img src={Logo6} alt='' className='w-16 h-16' />
-              </div>
-              <div className='w-3/4  '>
-                <div className='h-1/2 '>
-                  <div className='h-full  flex justify-start items-center text-blue-800 font-semibold text-2xl'>
-                    Redeem Points
-                  </div>
-                </div>
-                <div className='h-1/2 '>
-                  <div className='h-full flex justify-start items-center text-xs text-left text-gray-500'>
-                    Use your points to save on Service costs, Accessories and
-                    much more.
-                  </div>
-                </div>
-              </div>
+        </div>
+
+        {/* Section C */}
+        <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 p-2'>
+          <div className='flex flex-col justify-between p-4 bg-white rounded-lg shadow-md'>
+            <img
+              src={Logo5}
+              alt=''
+              className='w-16 h-16 mb-4 mx-auto'
+              x-intersect="$el.classList.add('fade-in-left')"
+            />
+            <div
+              className='text-blue-800 font-semibold text-xl text-center'
+              x-intersect="$el.classList.add('fade-in-left')"
+            >
+              Attend Exclusive Events
+            </div>
+            <div className='text-sm text-gray-500 text-left'>
+              Get opportunities for passes and exclusive invites to attend the
+              most exclusive and exciting events
+            </div>
+          </div>
+          <div className='flex flex-col justify-between p-4 bg-white rounded-lg shadow-md'>
+            <img
+              src={Logo6}
+              alt=''
+              className='w-16 h-16 mb-4 mx-auto'
+              x-intersect="$el.classList.add('fade-in-left')"
+            />
+            <div
+              className='text-blue-800 font-semibold text-xl text-center'
+              x-intersect="$el.classList.add('fade-in-left')"
+            >
+              Redeem Points
+            </div>
+            <div className='text-sm text-gray-500 text-left'>
+              Use your points to save on Service costs, Accessories and much
+              more.
             </div>
           </div>
         </div>
@@ -381,42 +382,42 @@ const EarnPoints = ({ tabNames }) => {
   const [isTabClicked, setIsTabClicked] = useState(false);
   const images = [
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-1.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/earn-points-webp/1.webp',
       name: 'through vehicle service',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-1.svg',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-1.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-2.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/earn-points-webp/5.webp',
       name: 'through extended warranty',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-2.svg',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-2.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-3.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/earn-points-webp/3.webp',
       name: 'through car accessories',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-3.svg',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-3.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-4.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/earn-points-webp/2.webp',
       name: 'through MCP',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-4.svg',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-4.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-5.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/earn-points-webp/6.webp',
       name: 'through badges',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-5.svg',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-color/icon-c-5.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/webp-slides/slide-6.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/earn-points-webp/4.webp',
       name: 'through Insurance',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/earn-points/earn-points-icons/icon-transparent/icon-6.svg',
       iconTransparent:
@@ -430,10 +431,10 @@ const EarnPoints = ({ tabNames }) => {
     setIsTabClicked(true); // Set tab clicked state to true when any tab is clicked
   };
 
-  useEffect(() => {
-    // Ensure that isTabClicked is false on component mount to display transparent icons by default
-    setIsTabClicked(false);
-  }, []);
+  // useEffect(() => {
+  //   // Ensure that isTabClicked is false on component mount to display transparent icons by default
+  //   setIsTabClicked(false);
+  // }, []);
 
   return (
     <div className='flex flex-col'>
@@ -445,7 +446,7 @@ const EarnPoints = ({ tabNames }) => {
         />
       </div>
       <div className='p-4'>
-        <div className='flex justify-center space-x-2'>
+        <div className='flex flex-col md:flex-row justify-center md:justify-start md:space-x-2'>
           {images.map((image, index) => (
             <button
               key={index}
@@ -453,17 +454,18 @@ const EarnPoints = ({ tabNames }) => {
                 selectedTab === index
                   ? 'bg-blue-900 text-white'
                   : 'border bg-gray-200/50 text-gray-700 hover:font-bold'
-              } rounded-md`}
+              } rounded-md mb-2 md:mb-0`}
               onClick={() => handleTabClick(index)}
               style={{ width: '200px', height: '100px' }}
             >
               <img
                 src={
-                  // Render colored icon if active tab or if any tab is clicked, otherwise render transparent icon
-                  selectedTab === index || isTabClicked
+                  selectedTab === index
                     ? image.icon
-                    : image.iconTransparent
-                }
+                    : isTabClicked
+                    ? image.iconTransparent
+                    : image.icon
+                } // Render colored icon if active tab or if any tab is clicked, otherwise render transparent icon
                 alt={`Icon ${index + 1}`}
                 className='w-14 h-14 mb-1'
               />
@@ -481,42 +483,42 @@ const RedeemPoints = ({ tabNames }) => {
   const [isTabClicked, setIsTabClicked] = useState(false);
   const images = [
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-1.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/redeem-points-webp/6.webp',
       name: 'on vehicle service',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-1.svg',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-1.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-2.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/redeem-points-webp/1.webp',
       name: 'on a new car',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-2.svg',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-2.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-3.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/redeem-points-webp/4.webp',
       name: 'on extended warranty',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-3.svg',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-3.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-4.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/redeem-points-webp/5.webp',
       name: 'on MCP',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-4.svg',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-4.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-5.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/redeem-points-webp/2.webp',
       name: 'on car accessories',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-5.svg',
       icon: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icons-plain/icon-p-5.svg',
     },
     {
-      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/webp-slides/slide-6.webp',
+      url: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/maruti-rewards/redeem-points-webp/3.webp',
       name: 'on Insurance',
       iconTransparent:
         'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/reeward-points/redeem-points-tab/icons/icon-coloured/icon-c-6.svg',
@@ -540,7 +542,7 @@ const RedeemPoints = ({ tabNames }) => {
         />
       </div>
       <div className='p-4'>
-        <div className='flex justify-center space-x-2'>
+        <div className='flex flex-col md:flex-row justify-center md:justify-start md:space-x-2'>
           {images.map((image, index) => (
             <button
               key={index}
@@ -548,7 +550,7 @@ const RedeemPoints = ({ tabNames }) => {
                 selectedTab === index
                   ? 'bg-blue-900 text-white'
                   : 'border bg-gray-200/50 text-gray-700 hover:font-bold'
-              } rounded-md`}
+              } rounded-md mb-2 md:mb-0`}
               onClick={() => handleTabClick(index)}
               style={{ width: '200px', height: '100px' }}
             >
@@ -590,9 +592,9 @@ const RewardTabs = () => {
         <div className='text-lg font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 uppercase'>
           <ul className='flex flex-wrap -mb-px'>
             {Object.keys(tabComponents).map((tabName) => (
-              <li key={tabName} className='me-2'>
+              <li key={tabName} className='me-2 mb-2 md:mb-0'>
                 <div
-                  className={`inline-block p-4 border-b-2 border-transparent rounded-t-lg ${
+                  className={`inline-block p-3 md:p-4 border-b-2 border-transparent rounded-t-lg ${
                     activeTab === tabName
                       ? 'text-blue-600 border-blue-600'
                       : 'hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'

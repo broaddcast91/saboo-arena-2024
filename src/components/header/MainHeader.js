@@ -75,6 +75,10 @@ const navigation = {
   ],
   servicepages: [
     {
+      name: 'Reward Points',
+      to: '/marutirewards',
+    },
+    {
       name: 'Payments',
       to: '/payment',
     },

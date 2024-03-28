@@ -140,26 +140,26 @@ const CarsSlider = ({ scrollToCarEnquiry }) => {
       return;
     }
     setLoading(true);
-    try {
-      await axios
-        .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
-          name: name,
-          phone: phone,
+    // try {
+    //   await axios
+    //     .post('https://saboogroups.com/admin/api/arena-onRoadPrice', {
+    //       name: name,
+    //       phone: phone,
 
-          model: model,
-        })
-        .then((res) => {
-          toast.success('Enquiry sent successfully');
-        })
-        .catch((err) => {
-          setLoading(false);
-          toast.error('Something went wrong!');
-          console.log(err);
-        });
-    } catch (error) {
-      // toast.error("Something went wrong!");
-      setLoading(false);
-    }
+    //       model: model,
+    //     })
+    //     .then((res) => {
+    //       toast.success('Enquiry sent successfully');
+    //     })
+    //     .catch((err) => {
+    //       setLoading(false);
+    //       toast.error('Something went wrong!');
+    //       console.log(err);
+    //     });
+    // } catch (error) {
+    //   // toast.error("Something went wrong!");
+    //   setLoading(false);
+    // }
 
     try {
       await axios
